@@ -1,0 +1,184 @@
+﻿
+/* Styles for visit tags. These are used on the Calendar page, to tag visits with little icons. */
+
+/* The DIV surrounding the tags on the Calendar's visit boxes */
+
+.visit_tag_surround {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    text-align: right;
+}
+
+/* Special tags, to indicate a visit that has notes, or a repeating schedule. */
+
+.visit_tag_has_visit_notes{
+    height: 12px;
+    width: 16px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    display: inline-block;
+    background: url(/images/visit_tags_v1.1.gif) 0px -72px;
+}
+
+.visit_tag_has_supervisor_notes{
+    height: 12px;
+    width: 16px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    display: inline-block;
+    background: url(/images/visit_tags_v1.1.gif) -24px -72px;
+}
+
+.visit_tag_rep{
+    height: 12px;
+    width: 24px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    /*opacity: .80;
+    filter: Alpha(Opacity=80);*/
+    display: inline-block;
+    background: url(/images/visit_tags_v1.1.gif) -48px -72px;
+}
+
+/* Tags that can be selected by the user */
+
+.visit_tag_0_G, .visit_tag_1_G, .visit_tag_2_G, .visit_tag_3_G, .visit_tag_4_G, .visit_tag_5_G, .visit_tag_6_G, .visit_tag_7_G, .visit_tag_8_G, .visit_tag_9_G,
+.visit_tag_A_G, .visit_tag_B_G, .visit_tag_C_G, .visit_tag_D_G, .visit_tag_E_G, .visit_tag_F_G, .visit_tag_G_G, .visit_tag_H_G, .visit_tag_I_G, .visit_tag_J_G,
+.visit_tag_K_G, .visit_tag_L_G, .visit_tag_M_G, .visit_tag_N_G, .visit_tag_O_G, .visit_tag_P_G, .visit_tag_Q_G, .visit_tag_R_G, .visit_tag_S_G, .visit_tag_T_G,
+.visit_tag_U_G, .visit_tag_V_G, .visit_tag_W_G, .visit_tag_X_G, .visit_tag_Y_G, .visit_tag_Z_G,
+
+.visit_tag_0_Y, .visit_tag_1_Y, .visit_tag_2_Y, .visit_tag_3_Y, .visit_tag_4_Y, .visit_tag_5_Y, .visit_tag_6_Y, .visit_tag_7_Y, .visit_tag_8_Y, .visit_tag_9_Y,
+.visit_tag_A_Y, .visit_tag_B_Y, .visit_tag_C_Y, .visit_tag_D_Y, .visit_tag_E_Y, .visit_tag_F_Y, .visit_tag_G_Y, .visit_tag_H_Y, .visit_tag_I_Y, .visit_tag_J_Y,
+.visit_tag_K_Y, .visit_tag_L_Y, .visit_tag_M_Y, .visit_tag_N_Y, .visit_tag_O_Y, .visit_tag_P_Y, .visit_tag_Q_Y, .visit_tag_R_Y, .visit_tag_S_Y, .visit_tag_T_Y,
+.visit_tag_U_Y, .visit_tag_V_Y, .visit_tag_W_Y, .visit_tag_X_Y, .visit_tag_Y_Y, .visit_tag_Z_Y,
+
+.visit_tag_0_R, .visit_tag_1_R, .visit_tag_2_R, .visit_tag_3_R, .visit_tag_4_R, .visit_tag_5_R, .visit_tag_6_R, .visit_tag_7_R, .visit_tag_8_R, .visit_tag_9_R,
+.visit_tag_A_R, .visit_tag_B_R, .visit_tag_C_R, .visit_tag_D_R, .visit_tag_E_R, .visit_tag_F_R, .visit_tag_G_R, .visit_tag_H_R, .visit_tag_I_R, .visit_tag_J_R,
+.visit_tag_K_R, .visit_tag_L_R, .visit_tag_M_R, .visit_tag_N_R, .visit_tag_O_R, .visit_tag_P_R, .visit_tag_Q_R, .visit_tag_R_R, .visit_tag_S_R, .visit_tag_T_R,
+.visit_tag_U_R, .visit_tag_V_R, .visit_tag_W_R, .visit_tag_X_R, .visit_tag_Y_R, .visit_tag_Z_R {
+    height: 12px;
+    width: 12px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    /*opacity: .80;
+    filter: Alpha(Opacity=80);*/
+    display: inline-block;
+}
+
+/* Green tags */
+
+.visit_tag_0_G { background: url(/images/visit_tags_v1.1.gif) 0px 0px;}
+.visit_tag_1_G { background: url(/images/visit_tags_v1.1.gif) -24px 0px;}
+.visit_tag_2_G { background: url(/images/visit_tags_v1.1.gif) -48px 0px;}
+.visit_tag_3_G { background: url(/images/visit_tags_v1.1.gif) -72px 0px;}
+.visit_tag_4_G { background: url(/images/visit_tags_v1.1.gif) -96px 0px;}
+.visit_tag_5_G { background: url(/images/visit_tags_v1.1.gif) -120px 0px;}
+.visit_tag_6_G { background: url(/images/visit_tags_v1.1.gif) -144px 0px;}
+.visit_tag_7_G { background: url(/images/visit_tags_v1.1.gif) -168px 0px;}
+.visit_tag_8_G { background: url(/images/visit_tags_v1.1.gif) -192px 0px;}
+.visit_tag_9_G { background: url(/images/visit_tags_v1.1.gif) -216px 0px;}
+.visit_tag_A_G { background: url(/images/visit_tags_v1.1.gif) -240px 0px;}
+.visit_tag_B_G { background: url(/images/visit_tags_v1.1.gif) -264px 0px;}
+.visit_tag_C_G { background: url(/images/visit_tags_v1.1.gif) -288px 0px;}
+.visit_tag_D_G { background: url(/images/visit_tags_v1.1.gif) -312px 0px;}
+.visit_tag_E_G { background: url(/images/visit_tags_v1.1.gif) -336px 0px;}
+.visit_tag_F_G { background: url(/images/visit_tags_v1.1.gif) -360px 0px;}
+.visit_tag_G_G { background: url(/images/visit_tags_v1.1.gif) -384px 0px;}
+.visit_tag_H_G { background: url(/images/visit_tags_v1.1.gif) -408px 0px;}
+.visit_tag_I_G { background: url(/images/visit_tags_v1.1.gif) -432px 0px;}
+.visit_tag_J_G { background: url(/images/visit_tags_v1.1.gif) -456px 0px;}
+.visit_tag_K_G { background: url(/images/visit_tags_v1.1.gif) -480px 0px;}
+.visit_tag_L_G { background: url(/images/visit_tags_v1.1.gif) -504px 0px;}
+.visit_tag_M_G { background: url(/images/visit_tags_v1.1.gif) -528px 0px;}
+.visit_tag_N_G { background: url(/images/visit_tags_v1.1.gif) -552px 0px;}
+.visit_tag_O_G { background: url(/images/visit_tags_v1.1.gif) -576px 0px;}
+.visit_tag_P_G { background: url(/images/visit_tags_v1.1.gif) -600px 0px;}
+.visit_tag_Q_G { background: url(/images/visit_tags_v1.1.gif) -624px 0px;}
+.visit_tag_R_G { background: url(/images/visit_tags_v1.1.gif) -648px 0px;}
+.visit_tag_S_G { background: url(/images/visit_tags_v1.1.gif) -672px 0px;}
+.visit_tag_T_G { background: url(/images/visit_tags_v1.1.gif) -696px 0px;}
+.visit_tag_U_G { background: url(/images/visit_tags_v1.1.gif) -720px 0px;}
+.visit_tag_V_G { background: url(/images/visit_tags_v1.1.gif) -744px 0px;}
+.visit_tag_W_G { background: url(/images/visit_tags_v1.1.gif) -768px 0px;}
+.visit_tag_X_G { background: url(/images/visit_tags_v1.1.gif) -792px 0px;}
+.visit_tag_Y_G { background: url(/images/visit_tags_v1.1.gif) -816px 0px;}
+.visit_tag_Z_G { background: url(/images/visit_tags_v1.1.gif) -840px 0px;}
+
+/* Yellow tags */
+
+.visit_tag_0_Y { background: url(/images/visit_tags_v1.1.gif) 0px -24px;}
+.visit_tag_1_Y { background: url(/images/visit_tags_v1.1.gif) -24px -24px;}
+.visit_tag_2_Y { background: url(/images/visit_tags_v1.1.gif) -48px -24px;}
+.visit_tag_3_Y { background: url(/images/visit_tags_v1.1.gif) -72px -24px;}
+.visit_tag_4_Y { background: url(/images/visit_tags_v1.1.gif) -96px -24px;}
+.visit_tag_5_Y { background: url(/images/visit_tags_v1.1.gif) -120px -24px;}
+.visit_tag_6_Y { background: url(/images/visit_tags_v1.1.gif) -144px -24px;}
+.visit_tag_7_Y { background: url(/images/visit_tags_v1.1.gif) -168px -24px;}
+.visit_tag_8_Y { background: url(/images/visit_tags_v1.1.gif) -192px -24px;}
+.visit_tag_9_Y { background: url(/images/visit_tags_v1.1.gif) -216px -24px;}
+.visit_tag_A_Y { background: url(/images/visit_tags_v1.1.gif) -240px -24px;}
+.visit_tag_B_Y { background: url(/images/visit_tags_v1.1.gif) -264px -24px;}
+.visit_tag_C_Y { background: url(/images/visit_tags_v1.1.gif) -288px -24px;}
+.visit_tag_D_Y { background: url(/images/visit_tags_v1.1.gif) -312px -24px;}
+.visit_tag_E_Y { background: url(/images/visit_tags_v1.1.gif) -336px -24px;}
+.visit_tag_F_Y { background: url(/images/visit_tags_v1.1.gif) -360px -24px;}
+.visit_tag_G_Y { background: url(/images/visit_tags_v1.1.gif) -384px -24px;}
+.visit_tag_H_Y { background: url(/images/visit_tags_v1.1.gif) -408px -24px;}
+.visit_tag_I_Y { background: url(/images/visit_tags_v1.1.gif) -432px -24px;}
+.visit_tag_J_Y { background: url(/images/visit_tags_v1.1.gif) -456px -24px;}
+.visit_tag_K_Y { background: url(/images/visit_tags_v1.1.gif) -480px -24px;}
+.visit_tag_L_Y { background: url(/images/visit_tags_v1.1.gif) -504px -24px;}
+.visit_tag_M_Y { background: url(/images/visit_tags_v1.1.gif) -528px -24px;}
+.visit_tag_N_Y { background: url(/images/visit_tags_v1.1.gif) -552px -24px;}
+.visit_tag_O_Y { background: url(/images/visit_tags_v1.1.gif) -576px -24px;}
+.visit_tag_P_Y { background: url(/images/visit_tags_v1.1.gif) -600px -24px;}
+.visit_tag_Q_Y { background: url(/images/visit_tags_v1.1.gif) -624px -24px;}
+.visit_tag_R_Y { background: url(/images/visit_tags_v1.1.gif) -648px -24px;}
+.visit_tag_S_Y { background: url(/images/visit_tags_v1.1.gif) -672px -24px;}
+.visit_tag_T_Y { background: url(/images/visit_tags_v1.1.gif) -696px -24px;}
+.visit_tag_U_Y { background: url(/images/visit_tags_v1.1.gif) -720px -24px;}
+.visit_tag_V_Y { background: url(/images/visit_tags_v1.1.gif) -744px -24px;}
+.visit_tag_W_Y { background: url(/images/visit_tags_v1.1.gif) -768px -24px;}
+.visit_tag_X_Y { background: url(/images/visit_tags_v1.1.gif) -792px -24px;}
+.visit_tag_Y_Y { background: url(/images/visit_tags_v1.1.gif) -816px -24px;}
+.visit_tag_Z_Y { background: url(/images/visit_tags_v1.1.gif) -840px -24px;}
+
+/* Red tags */
+
+.visit_tag_0_R { background: url(/images/visit_tags_v1.1.gif) 0px -48px;}
+.visit_tag_1_R { background: url(/images/visit_tags_v1.1.gif) -24px -48px;}
+.visit_tag_2_R { background: url(/images/visit_tags_v1.1.gif) -48px -48px;}
+.visit_tag_3_R { background: url(/images/visit_tags_v1.1.gif) -72px -48px;}
+.visit_tag_4_R { background: url(/images/visit_tags_v1.1.gif) -96px -48px;}
+.visit_tag_5_R { background: url(/images/visit_tags_v1.1.gif) -120px -48px;}
+.visit_tag_6_R { background: url(/images/visit_tags_v1.1.gif) -144px -48px;}
+.visit_tag_7_R { background: url(/images/visit_tags_v1.1.gif) -168px -48px;}
+.visit_tag_8_R { background: url(/images/visit_tags_v1.1.gif) -192px -48px;}
+.visit_tag_9_R { background: url(/images/visit_tags_v1.1.gif) -216px -48px;}
+.visit_tag_A_R { background: url(/images/visit_tags_v1.1.gif) -240px -48px;}
+.visit_tag_B_R { background: url(/images/visit_tags_v1.1.gif) -264px -48px;}
+.visit_tag_C_R { background: url(/images/visit_tags_v1.1.gif) -288px -48px;}
+.visit_tag_D_R { background: url(/images/visit_tags_v1.1.gif) -312px -48px;}
+.visit_tag_E_R { background: url(/images/visit_tags_v1.1.gif) -336px -48px;}
+.visit_tag_F_R { background: url(/images/visit_tags_v1.1.gif) -360px -48px;}
+.visit_tag_G_R { background: url(/images/visit_tags_v1.1.gif) -384px -48px;}
+.visit_tag_H_R { background: url(/images/visit_tags_v1.1.gif) -408px -48px;}
+.visit_tag_I_R { background: url(/images/visit_tags_v1.1.gif) -432px -48px;}
+.visit_tag_J_R { background: url(/images/visit_tags_v1.1.gif) -456px -48px;}
+.visit_tag_K_R { background: url(/images/visit_tags_v1.1.gif) -480px -48px;}
+.visit_tag_L_R { background: url(/images/visit_tags_v1.1.gif) -504px -48px;}
+.visit_tag_M_R { background: url(/images/visit_tags_v1.1.gif) -528px -48px;}
+.visit_tag_N_R { background: url(/images/visit_tags_v1.1.gif) -552px -48px;}
+.visit_tag_O_R { background: url(/images/visit_tags_v1.1.gif) -576px -48px;}
+.visit_tag_P_R { background: url(/images/visit_tags_v1.1.gif) -600px -48px;}
+.visit_tag_Q_R { background: url(/images/visit_tags_v1.1.gif) -624px -48px;}
+.visit_tag_R_R { background: url(/images/visit_tags_v1.1.gif) -648px -48px;}
+.visit_tag_S_R { background: url(/images/visit_tags_v1.1.gif) -672px -48px;}
+.visit_tag_T_R { background: url(/images/visit_tags_v1.1.gif) -696px -48px;}
+.visit_tag_U_R { background: url(/images/visit_tags_v1.1.gif) -720px -48px;}
+.visit_tag_V_R { background: url(/images/visit_tags_v1.1.gif) -744px -48px;}
+.visit_tag_W_R { background: url(/images/visit_tags_v1.1.gif) -768px -48px;}
+.visit_tag_X_R { background: url(/images/visit_tags_v1.1.gif) -792px -48px;}
+.visit_tag_Y_R { background: url(/images/visit_tags_v1.1.gif) -816px -48px;}
+.visit_tag_Z_R { background: url(/images/visit_tags_v1.1.gif) -840px -48px;}

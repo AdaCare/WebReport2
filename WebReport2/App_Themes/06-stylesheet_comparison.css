@@ -1,0 +1,53 @@
+﻿
+/************************************************************/
+/* Styles for product comparison table                      */
+
+.comparisontable_body {
+    border: 1px solid #999999;
+    border-collapse: collapse; /* padding: 4px; */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.comparisontable_body td {
+    padding: 2px;
+}
+
+.comparisontable_head {
+    font-weight: 600;
+    width: 100px;
+}
+
+.comparisontable_leftcol {
+    text-align: left;
+    font-weight: 500;
+}
+
+.comparisontable_lefthead {
+    font-weight: 600;
+    color: #004400;
+}
+
+.comparisontable_adacarecol {
+    border-left-style: solid;
+    border-width: 1px;
+    border-color: #999999;
+    text-align: center;
+    color: #004400;
+    background-color: #D0FFD0;
+}
+
+.comparisontable_competitorcol {
+    border-left-style: solid;
+    border-width: 1px;
+    border-color: #999999;
+    text-align: center;
+    color: #999999;
+}
+
+.comparisontable_caption, .comparisontable_caption p {
+    text-align: left;
+    font-style: italic;
+    margin-top: 4px;
+    margin-bottom: 0px;
+}

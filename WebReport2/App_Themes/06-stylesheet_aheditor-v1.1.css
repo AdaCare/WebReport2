@@ -1,0 +1,106 @@
+﻿
+/************************************************************/
+/* Styles for the AHEditor                              */
+
+/* OBSOLETE
+.aheditor_scrollingdiv {
+    border: 1px solid #DDDDDD;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+*/
+
+.aheditor_table td {
+    border-style: none solid solid solid;
+    border-width: 1px;
+    border-color: #DDDDDD; /*width: 88px;*/
+    /*width: 92px;*/
+    width: 105px;
+    text-align: center;
+}
+
+.aheditor_table .aheditor_labelcol, .aheditor_labelcol {
+    border-width: 1px;
+    border-style: none;
+    width: 60px;
+    text-align: right;
+    vertical-align: top;
+}
+
+/* Set width for 7-col merged sections */
+
+.aheditor_table .aheditor_7col {
+    border-style: none;
+    width: 644px;
+    /*width: 700px;*/
+}
+
+.aheditor_table input[type="button"] {
+    font-size: 0.75em !important;
+    text-align: center;
+    width: 75%;
+}
+
+.aheditor_table .aheditor_dayname {
+    border-top-style: solid;
+    border-width: 1px;
+    font-size: 1em;
+}
+
+.aheditor_availableopt {
+    font-size: 0.75em !important;
+    width: 100%;
+}
+
+.aheditor_table .aheditor_summary {
+    border-top-style: solid;
+    border-top-width: 3px;
+    font-size: 0.8em;
+    background: #CCFFCC;
+    color: #006600;
+}
+
+.aheditor_reason input[type="text"] {
+    font-size: 0.8em;
+    width: 82px;
+    text-align: center;
+}
+
+.aheditor_table .ui-selectee {
+    background: #F0F0F0;
+    border: 1px solid #C0C0C0;
+    cursor: pointer;
+}
+
+.aheditor_table .ui-selecting {
+    background: #FECA40;
+}
+
+.aheditor_table .ui-selected {
+    background: #CCFFCC;
+}
+
+.aheditor_table ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.aheditor_table li {
+    padding: 5px 0px 5px 0px;
+    margin: 0px 0px 0px 0px; /*height: 13px;*/
+    font-size: 0.7em;
+    text-align: center;
+}
+
+/* Formatting the time text boxes is tedious for consistency across browsers */
+
+.aheditor_table li input[type="text"] {
+    height: 12px;
+    width: 43px;
+    font-size: 10px;
+}
+
+.aheditor_table .disabled {
+    background: #F0F0F0;
+}

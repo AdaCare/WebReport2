@@ -1,0 +1,2 @@
+﻿This file is here just to force the Theme1 folder to be uploaded to the server.
+If we get rid of all references to Theme1 in the web.config file, we don't need this any more.

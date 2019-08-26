@@ -1,0 +1,47 @@
+﻿
+/************************************************************/
+/* Styles for the combined login/fontresizer widget         */
+
+/*
+.login_fontresizer_widget {
+    top: 0px;
+    float: right;
+}
+*/
+
+/************************************************************/
+/* Styles for the font resizer                              */
+
+.login_fontresizer_widget {
+    top: 0px;
+    position: absolute;
+    right: 0px;
+}
+
+.fontresizer {
+    font-family: 'Times New Roman' , Times, serif;
+    border: 1px solid #C0C0C0;
+    cursor: pointer;
+    text-align: right;
+    float: right;
+}
+
+.fontresizer_smaller {
+    font-weight: normal;
+    font-size: 8pt;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+.fontresizer_normal {
+    font-weight: normal;
+    font-size: 10pt;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+.fontresizer_larger {
+    font-weight: normal;
+    font-size: 12pt;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+

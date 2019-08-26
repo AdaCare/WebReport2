@@ -1,0 +1,91 @@
+﻿
+/************************************************************/
+/* Styles for the WSGridEditor                              */
+
+.wsgrid_scrollingdiv {
+    border: 1px solid #DDDDDD;
+    overflow-y: scroll;
+    height: 600px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.wsgrid_table td {
+    border-style: none solid none solid;
+    border-width: 1px;
+    border-color: #DDDDDD;
+    width: 88px;
+    text-align: center;
+}
+
+.wsgrid_table .wsgrid_labelcol, .wsgrid_labelcol {
+    border-width: 1px;
+    border-style: none;
+    width: 65px;
+    text-align: right;
+    vertical-align: top;
+}
+
+/* Set width for 7-col merged sections */
+
+.wsgrid_table .wsgrid_7col {
+    border-style: none;
+    width: 630px;
+}
+
+.wsgrid_table input[type="button"] {
+    font-size: 0.75em !important;
+    text-align: center;
+    width: 75%;
+}
+
+.wsgrid_table .wsgrid_dayname {
+    border-top-style: solid;
+    border-width: 1px;
+    font-size: 1em;
+}
+
+.wsgrid_availableopt {
+    font-size: 0.75em !important;
+    width: 100%;
+}
+
+.wsgrid_table .wsgrid_summary {
+    border-top-style: solid;
+    border-top-width: 3px;
+    font-size: 0.8em;
+    background: #CCFFCC;
+    color: #006600;
+}
+
+.wsgrid_reason input[type="text"] {
+    font-size: 0.8em;
+    width: 82px;
+    text-align: center;
+}
+
+.wsgrid_table .ui-selectee {
+    background: #F0F0F0;
+    border: 1px solid #C0C0C0;
+    cursor: pointer;
+}
+
+.wsgrid_table .ui-selecting {
+    background: #FECA40;
+}
+
+.wsgrid_table .ui-selected {
+    background: #CCFFCC;
+}
+
+.wsgrid_table ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wsgrid_table li {
+    margin: 1px;
+    height: 13px;
+    font-size: 0.7em;
+    text-align: center;
+}

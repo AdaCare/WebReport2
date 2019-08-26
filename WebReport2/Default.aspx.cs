@@ -30,7 +30,11 @@ namespace WebReport2
                 string instanceId = Environment.GetEnvironmentVariable("WEBSITE_INSTANCE_ID");
                 /// string siteName = Environment.GetEnvironmentVariable("WEBSITE_SITE_NAME");
                 // SiteNameLabel.Text = siteName;
-                Label1.Text = instanceId;
+
+                if (instanceId == null)
+                    instanceId = "UNK";
+
+                InstanceID.Text = instanceId;
             }
         }
         protected override void OnLoadComplete(EventArgs e)
@@ -42,7 +46,7 @@ namespace WebReport2
             //{
             //    ShowReport();
             //}
-            return;
+            // return;
 
             // Don't test IsPostBack. For some reason, the page loads *twice* each time it is displayed.
             // if (!IsPostBack)
@@ -59,6 +63,13 @@ namespace WebReport2
             ReportViewer3.LocalReport.Refresh();
             ReportViewer3.CurrentPage = pagenum;
             // }
+        }
+
+        protected override void OnPreRenderComplete(EventArgs e)
+        {
+            base.OnPreRenderComplete(e);
+
+            Helpers.JavaScriptRegisterTabControlCode(Page, TabControl);
         }
 
         protected void buttonShow_Click(object sender, EventArgs e)

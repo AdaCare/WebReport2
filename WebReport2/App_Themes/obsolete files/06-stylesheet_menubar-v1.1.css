@@ -1,0 +1,113 @@
+﻿
+/************************************************************/
+/* Styles for navigation menu bar                           */
+/*                                                          */
+/* 2017-07-12 SG: Revised to fix :visited and :link error.  */
+
+.menubar_surround {
+    border-style: solid none solid none;
+    border-width: 2px 1px 1px 1px;
+    border-color: #C0C0C0;
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: left;
+    margin-bottom: 4px; /* new */
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: .98em;
+}
+
+/* 2017-07-12 SG
+.menubar_top, .menubar_top a:link, .menubar_top a:visited { */
+.menubar_top, .menubar_top a {
+    padding: 0px;
+}
+
+/* 2017-07-12 SG
+.menubar_top_item, .menubar_top_item a, .menubar_top_item a:link, .menubar_top_item a:visited {*/
+.menubar_top_item, .menubar_top_item a {
+    border-style: none;
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
+    padding: 1px 3px 1px 3px;
+    color: #1C94C4;
+    text-decoration: none;
+    white-space: nowrap;
+    display: block;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-right: 2px;
+}
+
+    /* Top level menu hover */
+
+    .menubar_top_item a:hover {
+        color: #EB8F00;
+    }
+
+    .menubar_top_item li {
+        list-style-type: none;
+    }
+
+    /* Hover on top menu items (these have the "highlighted" class) */
+
+    .menubar_top_item .highlighted {
+        background-color: #FDF5CE !important;
+        color: #EB8F00;
+    }
+
+/* Selected menu item - all levels */
+
+/* 2017-07-12 SG
+.selected, .selected a:visited, .selected a:link {*/
+.selected, .selected a {
+    background-color: #FDF5CE !important;
+    color: #EB8F00;
+}
+
+/* Drop-down box that appears when a menu has a sub-menu */
+
+.menubar_sub {
+    z-index: 1;
+    margin: 0px;
+    padding: 2px;
+    border: 1px solid #FBCB09;
+    color: #1C94C4;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: .98em;
+    background-color: #F8F8F8;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5); /* CSS3 */
+    -moz-box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    display: none; /* Prevents menu "flash" during page load */
+}
+
+/* 2017-07-12 SG
+.menubar_sub a, .menubar_sub a:link, .menubar_sub a:visited {*/
+    .menubar_sub a, .menubar_sub a {
+        border-style: none;
+        padding: 2px 15px 3px 1em;
+        margin: 0px;
+    }
+
+    /* Hover on submenu items (these have the "highlighted" class) */
+
+    .menubar_sub .highlighted {
+        background-color: #FDF5CE;
+        color: #EB8F00;
+    }
+
+    /* Submenu items that have another level of submenu (these have "has-popup" class) */
+
+    .menubar_sub li.has-popup > a {
+        background-image: url('../images/menubar_arrow_hover_off.png');
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+
+        .menubar_sub li.has-popup > a.highlighted {
+            background-image: url('../images/menubar_arrow_hover.png');
+            background-position: right;
+            background-repeat: no-repeat;
+        }

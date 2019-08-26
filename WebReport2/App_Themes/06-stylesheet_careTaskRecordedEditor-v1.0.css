@@ -1,0 +1,22 @@
+﻿/* 05-stylesheet_careTaskRecordedEditor-v1.0.css */
+
+.careTaskRecordedEditorNotCompletedIcon, .careTaskRecordedEditorCompletedIcon, .careTaskRecordedEditorNotRecordedIcon {
+    display: inline-block;
+    width: 1.0em;
+    padding-right: 3px;
+}
+
+.careTaskRecordedEditorNotCompletedIcon {
+    -webkit-text-fill-color: #CC0000;
+    color: #CC0000;
+}
+
+.careTaskRecordedEditorCompletedIcon {
+    -webkit-text-fill-color: #00AA00;
+    color: #00AA00;
+}
+
+.careTaskRecordedEditorNotRecordedIcon {
+    -webkit-text-fill-color: #A0A0A0;
+    color: #A0A0A0;
+}

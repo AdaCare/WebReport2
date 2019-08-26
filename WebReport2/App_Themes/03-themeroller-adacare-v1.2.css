@@ -1,0 +1,228 @@
+﻿
+/************************************************************/
+/* These styles are used to adjust the ones provided by
+/* jQuery's themeroller.
+/************************************************************/
+
+.ui-widget-content {
+    background: #FBFFFF url('/images/background_box.gif') repeat-x 50% top;
+}
+
+    /***
+These will get rid of bold fonts in headers and such, but non-bold doesn't look good in tabs,
+especially in Win/Safari. Need to work on this more when convenient.
+***/
+
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+        font-weight: normal;
+    }
+
+    .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+        font-weight: normal;
+    }
+
+    .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+        font-weight: normal;
+    }
+
+.ui-tabs .ui-tabs-nav li a {
+    font-weight: bold;
+}
+
+.ui-widget-header {
+    font-weight: normal;
+}
+
+/***************************************************************************************/
+/* Dialogs                                                                             */
+
+/* Dialog title bar adjustments */
+
+.ui-dialog-titlebar {
+    font-size: 110%;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    padding-top: 2px;
+    padding-bottom: 1px;
+}
+
+/* Dialog buttons in AdaCare are on the left, not right */
+
+.ui-dialog .ui-dialog-buttonpane button, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+    float: left;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+    padding-top: .2em;
+    padding-bottom: .1em;
+}
+
+/***************************************************************************************/
+/* Accordions                                                                          */
+
+/*
+.ui-accordion .ui-accordion-header a {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+*/
+
+.ui-accordion .ui-accordion-header {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+/***************************************************************************************/
+/* Buttons                                                                             */
+
+/* Smaller buttons in dialog */
+
+.ui-button{
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.ui-button-text, .ui-button-text-only .ui-button-text {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/***************************************************************************************/
+/* State (of widgets and such)                                                         */
+
+/* Make the cursor a "hand" when over buttons */
+
+.ui-state-hover {
+    cursor: pointer;
+}
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+    opacity: .50;
+    filter: Alpha(Opacity=50);
+    background-image: none;
+}
+
+/* Themeroller wants 1.1em, and that's just too big. */
+
+.ui-widget {
+    font-size: 0.98em;
+}
+
+/*.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-size:0.98em;
+}*/
+
+/***************************************************************************************/
+/* Tabs                                                                                */
+
+/*
+.ui-tabs-panel
+{
+	font-size: 0.9em;
+}
+*/
+
+/*
+.ui-tabs .ui-tabs-nav li a {
+    padding: .1em 1em;
+}
+*/
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    padding: .1em 1em;
+}
+
+/* By default, JQuery sets the z-index of the resize handles to a BIG value, like 99999. This makes
+/* the handles appear above pop-up dialogs, instead of being covered by them. So, we adjust the
+/* z-index to a more reasonable value.
+*/
+
+.ui-resizable-handle {
+    z-index: auto;
+}
+
+.ui-resizable-s {
+    background-position: center;
+    background-image: url('/images/grip.png');
+    background-repeat: no-repeat; /*position: absolute;*/
+    bottom: 0px;
+    height: 10px;
+}
+
+/***************************************************************************************/
+/* Datepicker                                                                          */
+
+/* Assign this class to the datepicker DIV on scheduling pages.
+/* This will scale the jQuery datepicker widget down to a bit smaller
+*/
+
+.ui-datepicker {
+    font-size: .90em;
+}
+
+/* Add a small bit of space to the left of the datepicker calendar icon. This isn't needed in
+/* Safari, but IE lacks the space and the icon touches the date's text field. It looks a lot
+/* better with a bit of space in between.
+*/
+
+.ui-datepicker-trigger {
+    margin-left: 2px;
+}
+
+/***************************************************************************************/
+/* Selectmenu                                                                          */
+
+.ui-selectmenu-button {
+    vertical-align: middle;
+    box-shadow: 1px 1px 1px #888;
+    -moz-box-shadow: 1px 1px 1px #888;
+    -webkit-box-shadow: 1px 1px 1px #888;
+    /* Changes for jQuery UI 1.12.1 */
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+    .ui-selectmenu-button span.ui-selectmenu-text {
+        line-height: normal;
+        padding-top: 1px;
+        padding-bottom: 2px;
+        /*padding-right: 1.0em;*/
+        font-size: 95%;
+    }
+
+/* Drop-down list */
+.ui-selectmenu-menu .ui-widget-content {
+    font-size: 95%;
+    border-color: #808080;
+    box-shadow: 1px 1px 1px #888;
+    -moz-box-shadow: 1px 1px 1px #888;
+    -webkit-box-shadow: 1px 1px 1px #888;
+}
+
+/* Option group heading */
+.ui-selectmenu-menu .ui-menu .ui-selectmenu-optgroup {
+    color: #808080;
+    background-color: /*#F0FFF0*/ #E6F5FF;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+/* Each item within the list */
+.ui-menu .ui-menu-item {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+/* Fix to make callouts appear in front of modal dialog.   */
+/* Apply this style to each ValidatorCalloutExtender.      */
+
+/*
+.custom_validatorcallout {
+    z-index: 9999;
+}
+*/
+/*
+.ui-dialog .updnValidatorCallout {
+    z-index: 9999;
+}
+*/

@@ -1,0 +1,49 @@
+﻿
+/* Styles for the ClientPreferredStaffEditor. These are used on the Manage CLients and Manage Staff pages. */
+
+.client_preferred_staff_editor_surround {
+    position: relative;
+    height: 100%;
+}
+
+.client_preferred_staff_editor_header {
+    height: 15px;
+    position: absolute;
+    top: 0;
+}
+
+.client_preferred_staff_editor_body {
+    width: 100%;
+    position: absolute;
+    top: 15px;
+    bottom: 35px;
+    overflow-y: scroll;
+}
+
+    .client_preferred_staff_editor_body input {
+        margin: 0;
+    }
+
+.client_preferred_staff_editor_footer {
+    height: 30px;
+    position: absolute;
+    bottom: 5px;
+}
+
+.client_preferred_staff_editor_is_preferred_staff_col {
+    width: 4em;
+    text-align: center;
+}
+
+.client_preferred_staff_editor_is_excluded_staff_col {
+    width: 4em;
+    text-align: center;
+}
+
+.client_preferred_staff_editor_namefull_col {
+    text-align: left;
+}
+
+.client_preferred_staff_editor_total {
+    margin-top: 2px;
+}

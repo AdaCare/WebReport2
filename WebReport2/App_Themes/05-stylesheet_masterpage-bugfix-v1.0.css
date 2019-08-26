@@ -1,0 +1,33 @@
+﻿
+/*************************************************************************************************
+05-stylesheet_masterpage-bugfix-v1.0.css
+
+These styles are TEMPORARILY to work around a bug in ReportViewer 2016 (v140.802.134).
+
+Here's the problem: The ReportViewer displays a pop-up dialog when the "print" button is clicked.
+This dialog is pretty ugly. There are no public properties for controlling the dialog's CSS, so
+we define styles in this file to override the ugly styles defined by the ReportViewer.
+
+This file may be deleted if and when ReportViewer provides a better way for styling the Print dialog.
+
+Revisions:
+    2017-10-04 SG: New CSS to accomodate ReportViewer 2016 bugs.
+*************************************************************************************************/
+
+.msrs-printdialog-divhighlightbutton, .msrs-printdialog-divbuttons {
+    height: 22px !important;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    border-radius: 4px;
+    border-color: rgb(204, 204, 204) !important;
+    box-shadow: 1px 1px 1px #888;
+    background-color: #f6f6f6 !important;
+    font-size: 13px !important;
+    color: #1c94c4 !important;
+}
+
+    .msrs-printdialog-divbuttons .msrs-printdialog-pprintbutton, .msrs-printdialog-divbuttons .msrs-printdialog-pcancelbutton {
+        padding: 0;
+        text-align: center;
+    }
+

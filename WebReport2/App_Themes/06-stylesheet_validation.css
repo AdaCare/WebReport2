@@ -1,0 +1,109 @@
+﻿
+/****************************************************************/
+/* Styles for user input masking and validation.                */
+/* Most of these styles do nothing. They are set as a field's   */
+/* CSS class so jQuery can select them easily.                  */
+
+.val_required {
+}
+
+.val_int {
+}
+
+.val_int_right {
+    text-align: right;
+}
+
+.val_number {
+}
+
+.val_currency, .val_currency3 {
+    text-align: right;
+}
+
+.val_decimal0, .val_decimal2, .val_decimal3 {
+    text-align: right;
+}
+
+.val_date {
+}
+
+.val_birthdate {
+}
+
+.val_time {
+    text-align: right;
+}
+
+.val_ceuhours {
+    text-align: right;
+}
+
+.val_hoursminutes {
+    text-align: right;
+}
+
+.val_ssn {
+}
+
+.val_email {
+}
+
+.val_password {
+}
+
+.val_mileage {
+    text-align: right;
+}
+
+.val_creditcard {
+}
+
+.val_phone_us {
+}
+
+.val_callerid_us {
+}
+
+.mask-int {
+}
+
+.mask-pint {
+}
+
+.val_popup_container {
+    border: 1px solid #CCCCCC;
+    position: absolute;
+    width: 150px;
+    font-size: .9em;
+    background-color: #FFFF66;
+    padding: 3px;
+    white-space: normal; /* allow wrapping */
+    text-align: left;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    -webkit-box-shadow: 0 0 5px #aaa;
+    box-shadow: 0 0 5px #aaa;
+}
+
+.val_left_arrow {
+    background-position: right;
+    background-image: url('/images/val_left_arrow.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0px;
+    left: -20px;
+}
+
+/***
+.val_right_msgbox{
+}
+***/
+
+.val_badfield {
+    background-color: #FFF0F0;
+}

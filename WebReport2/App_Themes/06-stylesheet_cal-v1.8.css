@@ -1,0 +1,687 @@
+﻿/*
+	These are the styles used by the calendar page. They are rather specialized, and they
+	aren't used elsewhere in the application.
+*/
+
+/* Special style to override the master style. This lets the calendar be as wide as	*/
+/* the user's monitor. This is very handy for larger agencies, who have lots of		*/
+/* clients and staff.																*/
+
+/* 
+    Revisions:
+    2019-08-10 SG: Added padding to bottom of cells to allow doible-click to add new visits. 
+*/
+
+.cal_outersurround {
+    border: 1px solid #A0A0A0;
+    padding: 5px;
+    /* 2017-07-14 SG margin: 0px;*/
+    margin-left: auto;
+    margin-right: auto;
+    font-family: verdana;
+    font-size: 0.85em;
+    border-collapse: collapse;
+    max-width: 98%;
+}
+
+.cal_outersurround, .cal_innersurround {
+    position: relative;
+}
+
+.cal_innersurround {
+    font-size: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Copied from themeroller ui-state-hover */
+.cal_viewmode_highlight {
+    border: 1px solid #fbcb09;
+    background: #fdf5ce url('Theme1/themeroller/images/ui-bg_glass_100_fdf5ce_1x400.png') repeat-x 50% 50%;
+}
+
+.cal_dateheader {
+    font-size: 1.2em;
+    padding-bottom: .5em;
+}
+
+.cal_outerbody {
+    position: relative; /* overflow: auto; */
+}
+
+/**************** NEW ******************/
+
+.cal_table {
+    border: 1px solid #D0D0D0;
+    border-collapse: collapse;
+}
+
+    .cal_table td {
+        vertical-align: top;
+        padding: 0px;
+    }
+
+.cal_overlay_body, .cal_stacked_body {
+    position: relative;
+    float: left;
+    background-color: #FFFFFF;
+}
+
+.cal_overlay_body {
+    border: 1px solid #D0D0D0;
+}
+
+.cal_headrow {
+    background-color: #FFFFFF;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #D0D0D0;
+}
+
+.cal_overlay_lefthead, .cal_stacked_lefthead {
+    float: left; /*border-bottom-style: dotted;     border-width: 1px;     border-color: #D0D0D0;*/
+    padding: 0px;
+}
+
+.cal_overlay_lefthead {
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+.cal_stacked_lefthead {
+    width: 140px; /*background-color: #FFFFFF;*/
+}
+
+.cal_overlay_righthead, .cal_stacked_righthead {
+    /*border-bottom-style: dotted;     border-width: 1px;     border-color: #D0D0D0;*/
+    position: relative;
+    float: left;
+    padding: 0px; /*background-color: #FFFFFF;*/
+}
+
+.cal_overlay_rightgroupheadrow, .cal_stacked_rightgroupheadrow {
+    float: none;
+    position: static;
+}
+
+.cal_overlay_rightgroupheadcell, .cal_stacked_rightgroupheadcell {
+    font-weight: 500;
+    text-align: center;
+    float: left;
+    position: relative;
+    overflow: hidden; /*display: table-cell;     vertical-align: bottom;*/
+}
+
+.cal_overlay_rightcolheadcell, .cal_stacked_rightcolheadcell {
+    font-weight: 500;
+    text-align: center;
+    float: left;
+    position: relative;
+    border-left-style: dotted;
+    border-width: 1px;
+    border-color: #D0D0D0;
+    padding: 0px;
+    width: 84px;
+}
+
+.cal_stacked_bodyrow {
+    float: left;
+    border-bottom-style: dotted;
+    border-width: 1px;
+    border-color: #D0D0D0;
+    padding: 0px;
+    vertical-align: top;
+}
+
+.cal_overlay_leftbody, .cal_stacked_leftbody {
+    border-bottom-style: dotted;
+    border-width: 1px;
+    border-color: #D0D0D0;
+    font-weight: 500;
+    padding: 0px;
+}
+
+.cal_overlay_leftbody {
+    text-align: right;
+    float: left;
+    padding-right: 2px;
+    padding-left: 2px;
+    background-color: #FFFFFF;
+}
+
+.cal_stacked_leftbody {
+    text-align: left;
+    background-color: #FFFFFF;
+}
+
+.cal_stacked_bodyslot, .cal_stacked_bodyslot_reason, .cal_stacked_bodyslot_offduty {
+    border-left-style: dotted;
+    border-bottom-style: dotted;
+    border-width: 1px;
+    border-color: #D0D0D0;
+    padding: 0px;
+    width: 88px; /* Must match Cal.COL_INSIDE_WIDTH_PX */
+}
+
+/*.cal_stacked_bodyslot {
+    background-color: #FFFFFF;
+}*/
+
+.cal_stacked_bodyslot {
+    background-color: #FFFFFF;
+    padding-bottom: 6px !important;
+}
+
+.cal_stacked_bodyslot_reason {
+    text-align: center;
+    font-weight: 600;
+}
+
+.cal_stacked_bodyslot_offduty {
+    background-color: #E8E8E8;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Only include CSS not already defined in ui-widget ui-widget-header! */
+/* whover uses this style should also use the ui styles. */
+
+.cal_no_visits_msg {
+    margin: 0.5em auto 0.5em auto;
+    text-align: center;
+    padding: 4px;
+    width: 20em;
+    top: 20%;
+}
+
+.cal_clientview_button {
+    float: left;
+}
+
+.cal_staffview_button {
+    float: right;
+}
+
+.cal_title {
+    margin: 2px auto 2px auto;
+    text-align: center;
+    padding: 4px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.cal_title_datetext {
+    margin: 2px auto 6px auto;
+    text-align: center;
+    padding: 4px;
+    font-size: 1.0em;
+}
+
+.cal_title_left {
+    float: left;
+    padding: 4px;
+}
+
+.cal_title_right {
+    float: right;
+    padding: 4px;
+}
+
+.cal_visitcell_overlay, .cal_visitcell_stacked {
+    margin-left: 0px;
+    padding: 2px; /*border: 1px solid #999999; 	background-color: #CCFFCC;*/
+    cursor: move;
+    font-weight: normal;
+    text-align: left;
+    overflow: hidden;
+    border-radius: 4px; /* CSS3 */
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3); /* CSS3 */
+    -moz-box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    border-collapse: separate; /* Must override collapse inherited from <table>, or IE loses shadow */
+    /* 2017-07-14 SG for Firefox */
+    line-height: 12px;
+}
+
+.cal_visitcell_overlay {
+    position: absolute !important;
+    width: 82px;
+}
+
+.cal_visitcell_stacked {
+    position: relative !important;
+    width: 82px;
+    height: 36px;
+    top: 0;
+    left: 0;
+}
+
+/* Style for a normal visit cell. */
+
+.cal_visitcell_default {
+    border: 1px solid #999999;
+    background-color: #d8f8d8;
+    color: #333333;
+}
+
+/* Style for a "kept" status visit cell. */
+
+.cal_visitcell_kept {
+    border: 1px solid #999999;
+    background-color: #A8E0A8;
+    color: #333333;
+}
+
+/*
+    Style for a visit cell that is a warning because of a conflict.
+    This is appended to the current style, rather than replacing it.
+*/
+
+.cal_visitcell_warning {
+    border: 1px solid #FFC0C0;
+    background-color: #ffff80;
+    color: #333333;
+}
+
+/*
+	Style for a cell that is unassigned to a staff.
+*/
+
+.cal_visitcell_unassigned {
+    border: 1px solid #999999;
+    background-color: #C0F0FF;
+    color: #333333;
+}
+
+
+/*
+	Style for a visit cell that is not busy (e.g., canceled). This is used
+	to show that the slot is available and no longer busy.
+*/
+
+.cal_visitcell_available {
+    border: 1px solid #D0D0D0;
+    background-color: #E8E8E8;
+    opacity: .60;
+    filter: Alpha(Opacity=60);
+}
+
+/*
+	Style to add to a visit cell that is a no-show visit.
+	It adds barberpole stripes to the visit cell.
+*/
+
+.cal_visitcell_noshow, .cal_visitcell_noshow_legend {
+    background-position: left top;
+    background-image: url('/images/warning-stripes.png');
+}
+
+.cal_visitcell_noshow {
+    margin: 2px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.cal_visitcell_noshow_legend {
+    border: 1px solid #D0D0D0;
+}
+
+/*
+	Style to add to a visit cell that is a repeating visit.
+	It adds an icon to the visit cell.
+*/
+
+.cal_visitcell_repeater {
+    padding: 2px;
+    background-position: right bottom;
+    background-image: url('/images/repeater-icon.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    height: 100%;
+    width: 100%;
+}
+
+/* Used on the lengend of the Calendar page.*/
+.cal_legend_item {
+    white-space: nowrap;
+    padding-top: 4px;
+    /* 2017-07-14 SG FIX FOR MAC SAFARI padding-right: 1.5em;*/
+    padding-right: 10px;
+}
+
+/*
+	Styles for overflow visit elements. These have a big, fat arrow pointing
+	out the bottom or into the top of the visit element.
+*/
+
+.cal_oflow_top {
+    background-position: center top;
+    background-image: url('/images/oflow-arrow-top.png');
+    background-repeat: no-repeat;
+}
+
+.cal_oflow_bot {
+    background-position: center bottom;
+    background-image: url('/images/oflow-arrow-bot.png');
+    background-repeat: no-repeat;
+}
+
+/* Styles for the client/staff detail popup */
+
+.cal_detail_popup_surround {
+    position: absolute;
+    width: 300px;
+}
+
+.cal_detail_popup {
+    padding: 2px;
+    /* 2017-07-30 SG font-size: .8em;*/
+    font-size: 1em;
+    background-color: #FFFFFF;
+    border: 1px solid #D0D0D0;
+    border-radius: 4px; /* CSS3 */
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3); /* CSS3 */
+    -moz-box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    border-collapse: separate; /* Must override collapse inherited from <table>, or IE loses shadow */
+}
+
+.cal_detail_popup td {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.cal_detail_popup_titlediv {
+    min-height: 17px;
+    padding: 2px;
+    font-size: 1.1em;
+    font-weight: 600;
+    background-color: #F0F0F0;
+}
+
+.cal_detail_popup_closebox {
+    border: 1px solid #D0D0D0;
+    float: right;
+    cursor: pointer;
+    background-color: #FFFFFF;
+}
+
+.cal_detail_popup_left_arrow {
+    position: absolute;
+    top: 0px;
+    left: 1px;
+    background-image: url('/images/detail_popup_left_arrow.png');
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 24px;
+}
+
+
+/**************** END NEW ******************/
+
+.cal_leftcol {
+    font-weight: 500;
+    text-align: right;
+    padding-right: 1em;
+    padding-left: 1em;
+    float: left; /*width: 4em;*/
+}
+
+.cal_body {
+    border: 1px solid #C0C0C0;
+    position: relative;
+    float: left;
+}
+
+.cal_headrow_outer {
+    height: 26px;
+    position: static;
+    border-color: #C0C0C0;
+    border-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-right-style: solid;
+}
+
+.cal_lefthead, .cal_righthead {
+    float: left;
+    position: relative;
+}
+
+.cal_grouphead {
+    /*border-style: solid;     border-width: 0px;     border-color: #C0C0C0;*/
+    font-weight: 500;
+    text-align: center;
+    height: 25px;
+    float: left;
+    position: relative;
+    overflow: hidden; /* font-size: .9em; */
+}
+
+.cal_colhead {
+    /*border-color: #C0C0C0;     border-width: 1px;     border-top-style: solid;     border-bottom-style: solid;*/
+    font-weight: 500;
+    text-align: center; /*height: 18px;*/
+    float: left;
+    position: relative;
+    padding: 0px;
+}
+
+.cal_rowleftcol, .cal_rowbody {
+    text-align: left;
+    position: relative;
+    padding: 0px;
+}
+
+.cal_hourrow, .cal_hourcell {
+    border-bottom-style: dotted;
+    border-width: 1px;
+    border-color: #D0D0D0;
+    position: absolute;
+}
+
+.cal_hourcell {
+    text-align: right;
+    position: relative;
+}
+
+.cal_hourtext {
+    font-size: 1.8em;
+    font-weight: 500;
+    vertical-align: top;
+}
+
+.cal_hourampm {
+    font-size: 1em;
+    vertical-align: top;
+}
+
+/* Add-on styles for cell borders */
+
+.cal_border_headtop {
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: #D0D0D0; /*border-style: solid none solid none;     border-width: 1px;     border-color: #C0C0C0;*/
+}
+
+.cal_border_col {
+    border-style: none solid none none;
+    border-width: 1px;
+    border-color: #C0C0C0;
+}
+
+.cal_border_bothcol {
+    border-style: none solid none solid;
+    border-width: 1px;
+    border-color: #C0C0C0;
+}
+
+.cal_border_row_major {
+    border-bottom-style: dotted;
+    border-width: 1px;
+    border-color: #D0D0D0;
+    padding: 0px;
+}
+
+/* Vertical lines between groups in the calendar body */
+
+.cal_bodygroup {
+    border-style: none solid none none;
+    border-width: 1px;
+    border-color: #C0C0C0;
+    font-weight: 500;
+    position: absolute;
+}
+
+/* Vertical lines between columns (within each group) in the calendar body */
+
+.cal_bodycol {
+    border-style: none solid none none;
+    border-width: 1px;
+    border-color: #C0C0C0;
+    font-weight: 500;
+    position: absolute;
+    width: 88px; /* Must match Cal.COL_INSIDE_WIDTH_PX */
+}
+
+.cal_timecell {
+    height: 12px;
+    background-color: #FFFFFF;
+    text-align: right;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.cal_visitcol {
+    position: relative;
+    background-color: #FFFF99;
+}
+
+.cal_visitcell {
+    border: 1px solid #999999;
+    height: 48px;
+    background-color: #99FF99;
+    top: 24px;
+    position: absolute;
+    width: 100%;
+    cursor: pointer;
+}
+
+.cal_visitcell_inner {
+    height: 100%; /* position: relative; */
+}
+
+/* The header is where the client or staff name is displayed in the visit. Unassigned staff are highlighted. */
+
+.cal_visitcell_header {
+    margin-left: 0px;
+    padding: 0px;
+    overflow: hidden;
+    width: 100%;
+    top: 14px;
+    position: absolute;
+    color: #333333;
+}
+
+.cal_visitcell_unassigned .cal_visitcell_header {
+    color: #A00000;
+}
+
+/* ORIGINAL
+.cal_visitcell_time {
+    margin-left: 0px;
+    padding: 0px;
+}
+*/
+
+.cal_visitcell_time, .cal_visitcell_minutes {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    position: absolute;
+}
+
+/* The "time" and "minutes" are actually start/end times. Need to update these names */
+
+.cal_visitcell_time {
+    top: 0px;
+    left: 2px;
+}
+
+.cal_visitcell_minutes {
+    top: 0px;
+    right: 2px;
+}
+
+/* 2017-07-14 SG Moved from 06-stylesheet_visittags-v1.3.css */
+.cal_visit_tag_surround {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    padding-bottom: 0;
+}
+
+/* TEST */
+.cal_slot {
+    position: absolute;
+    background-color: #FFCCCC;
+}
+
+.cal_slottwin {
+    /*border-width: 1px;     border-right-style: solid;*/
+    position: absolute;
+    cursor: pointer;
+}
+
+.cal_bodycover {
+    position: absolute;
+    cursor: pointer;
+}
+
+/*
+.cal_slotcolright {
+    border-width: 1px;
+    border-color: #6699FF;
+    border-right-style: solid;
+}
+*/
+
+.cal_slotavailable {
+    background-color: #FFFFFF; /*border-width: 1px;     border-color: #FFFFFF;     border-right-style: solid;*/
+}
+
+.cal_slotblocked {
+    background-color: #EAEAEA;
+    position: absolute;
+}
+
+/* Applied to the available hours "reason" text */
+
+.cal_reason {
+    font-weight: 600;
+}
+
+.cal_hidden {
+    display: none;
+}
+
+.calgrid_gridnorm {
+    border: 1px solid #C0C0C0;
+    position: relative;
+    float: left; /*     padding: 2px;     border: 3px solid #E5E5E5;     cursor: pointer;     border-collapse: collapse;     */
+}
+
+.calgrid_gridactive {
+    border: 1px solid #0066FF;
+    position: relative;
+    float: left; /*     padding: 2px;     border: 3px solid #0066FF;     cursor: crosshair;     border-collapse: collapse;     */
+}

@@ -1,0 +1,55 @@
+﻿/* Styles for the adacare.insAuthDisplayInfoTools code. It should be included in any page that uses this code. */
+
+.insAuthDisplayInfoTools_style_headerBase {
+    border-bottom: 1px solid #A0A0A0;
+}
+
+.insAuthDisplayInfoTools_style_remainingOk {
+    color: #006600;
+}
+
+.insAuthDisplayInfoTools_style_limitExceeded {
+    color: #CC0000;
+}
+
+.insAuthDisplayInfoTools_style_descripCol {
+    padding-left: 1em;
+    padding-right: 1em;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.insAuthDisplayInfoTools_style_dateDescripCol {
+    padding-left: 1em;
+    padding-right: 1em;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.insAuthDisplayInfoTools_style_limitCol {
+    padding-left: 1em;
+    padding-right: 1em;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.insAuthDisplayInfoTools_style_usedCol {
+    padding-left: 1em;
+    padding-right: 1em;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.insAuthDisplayInfoTools_style_newCol {
+    padding-left: 1em;
+    padding-right: 1em;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.insAuthDisplayInfoTools_style_remainCol {
+    padding-left: 1em;
+    padding-right: 1em;
+    white-space: nowrap;
+    text-align: right;
+}

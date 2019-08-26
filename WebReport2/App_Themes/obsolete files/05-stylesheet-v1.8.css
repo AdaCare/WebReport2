@@ -1,0 +1,659 @@
+﻿
+/************************************************************/
+/* Styles for standard HTML tags                            */
+/* Note: Copy the font family from the themeroller          */
+/* ui-widget style.                                         */
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+    font-size: 85%;
+    background-color: #F6FBFF;
+    height: 100%;
+}
+
+body, form {
+    margin: 0;
+    /*padding: 6px 6px 3px 6px;*/
+}
+
+body {
+    height: 100%;
+}
+
+form {
+    height: 99%;
+    padding: 6px 6px 0 6px;
+}
+
+/*body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    min-height: 100%;
+}*/
+
+h1 {
+    margin: 0; /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-size: 1.3em;
+    font-weight: normal;
+    color: #000000; /*text-shadow: 1px 1px 1px #888;*/
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}
+
+h2 {
+    margin-bottom: 0; /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-size: 1.1em;
+    font-weight: normal;
+    color: #000000; /*font-variant: small-caps;*/
+    background-color: #F0F0F0;
+    padding-left: 6px;
+}
+
+h3 {
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1.0em;
+    font-weight: normal;
+    color: #000000;
+}
+
+/*
+table {
+	border: 1px solid #D0D0D0;
+}
+*/
+
+p {
+    margin: 1em 0 1em 0;
+    text-align: left;
+}
+
+ul {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+    /* Bullets change with each level of nesting */
+
+    ul.bullet li {
+        padding-top: 4px;
+        list-style-type: square;
+    }
+
+        ul.bullet li ul li {
+            padding-top: 4px;
+            list-style-type: disc;
+        }
+
+        ul.bullet li ol li {
+            padding-top: 4px;
+            list-style-type: decimal;
+        }
+
+ol li {
+    padding-top: 4px;
+}
+
+input[type="button"], .button_small input[type="button"], input[type="submit"], .button_small input[type="submit"], button, .button_small button {
+    -moz-box-shadow: 1px 1px 1px #888;
+    -webkit-box-shadow: 1px 1px 1px #888;
+    box-shadow: 1px 1px 1px #888;
+    border-collapse: separate;
+    cursor: pointer;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-weight: bold !important;
+}
+
+    /* Same as ui-state-hover */
+
+    input[type="button"]:hover, .button_small input[type="button"]:hover, input[type="submit"]:hover, .button_small input[type="submit"]:hover, button:hover, .button_small button:hover {
+        border: 1px solid #fbcb09;
+        background: #fdf5ce url(images/ui-bg_glass_100_fdf5ce_1x400.png) 50% 50% repeat-x;
+        font-weight: bold;
+        color: #c77405;
+    }
+
+/* Same as ui-state-active */
+
+/***
+input[type="button"]:active, .button_small input[type="button"]:active, input[type="submit"]:active, .button_small input[type="submit"]:active, button:active, .button_small button:active {
+    border: 1px solid #fbd850;
+    background: #ffffff url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
+    font-weight: bold;
+    color: #eb8f00;
+}
+***/
+
+.button_small, .button_small input[type="button"], .button_small input[type="submit"] {
+    font-size: .85em !important;
+}
+
+input[type="text"], textarea, select {
+    font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+}
+
+a:link {
+    color: Blue;
+}
+
+a:visited {
+    color: Purple;
+}
+
+a:active {
+    color: Red;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+    table td {
+        vertical-align: baseline;
+    }
+
+/************************************************************/
+/* General-purpose styles                                   */
+
+.general_left {
+    text-align: left;
+}
+
+.general_right {
+    text-align: right; /*margin-left: 40px;*/
+}
+
+.general_top {
+    vertical-align: top;
+}
+
+.general_center {
+    text-align: center;
+}
+
+.general_hidden {
+    display: none;
+}
+
+.general_box, .general_infomsg_box, .general_cautionmsg_box, .general_errormsg_box {
+    border: 1px solid #A0A0A0;
+    padding: 4px;
+}
+
+.general_normalmsg_text, .general_infomsg_text, .general_cautionmsg_text, .general_errormsg_text, .general_normalmsg, .general_infomsg, .general_infomsg_box, .general_cautionmsg, .general_cautionmsg_box, .general_errormsg, .general_errormsg_box {
+    font-size: 0.9em;
+}
+
+.general_infomsg_text, .general_infomsg, .general_infomsg_box {
+    color: #006600;
+}
+
+.general_infomsg, .general_infomsg_box {
+    background-color: #F0FFF0;
+}
+
+.general_infomsg_box {
+    border: 1px solid #006600;
+}
+
+.general_cautionmsg, .general_cautionmsg_box {
+    background-color: #FFFFD0;
+}
+
+.general_cautionmsg_box {
+    border: 1px solid #A0A0A0;
+}
+
+.general_errormsg_text, .general_errormsg, .general_errormsg_box {
+    color: #CC0000;
+}
+
+.general_errormsg, .general_errormsg_box {
+    background-color: #FFF0F0;
+}
+
+.general_errormsg_box {
+    border: #CC0000;
+}
+
+/* "Required Field" asterisk */
+
+.general_required {
+    color: #FF3300;
+    text-align: left;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+.general_size75pct {
+    font-size: 75% !important; /* Overrides themeroller input styles */
+}
+
+.general_shaded {
+    background-color: #f0f0f0; /* Shaded cells in tables, like headings */
+}
+
+/* Off screen, so it's hidden. Used to get the focus instead of first DatePicker.   */
+/* If the DatePicker problem is fixed, get rid of these fields.                     */
+
+.general_fakehidden {
+    position: fixed;
+    left: -1000px;
+}
+
+/************************************************************/
+/* Styles for the home page.								*/
+
+.homepage_subhead {
+    font-size: 1.17em; /*font-weight: bold; */
+    margin: .7em 0 0 0;
+}
+
+.homepage_hint {
+    font-size: 85%;
+    color: #808080;
+    margin-left: 0;
+}
+
+/************************************************************/
+/* Style for modal dialog                                   */
+
+.dialog {
+    margin-bottom: 0;
+}
+
+/************************************************************/
+/* Generic styles for tables. May be used for other controls*/
+
+.table_centerbox, .table_center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.table_centerbox {
+    border: 1px solid #A0A0A0;
+    padding: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+/* Define the style for labels within a table. The style varies a bit depending on the thing    */
+/* being labeled. The "multiline" style is for labeling multi-line text boxes, as commonly      */
+/* used for fields of notes. The "radiolist" style is used for labeling vertical radio button   */
+/* lists.                                                                                       */
+
+.table_label_col, .table_label_col_multiline, .table_label_col_radiolist, .datepicker_label_col {
+    text-align: right;
+    padding-left: 4px;
+    padding-right: 4px;
+    white-space: nowrap;
+}
+
+.table_label_col_multiline, .table_label_col_radiolist {
+    vertical-align: top;
+}
+
+.table_label_col_radiolist {
+    padding-top: 5px;
+}
+
+.datepicker_label_col {
+    vertical-align: bottom;
+    padding-bottom: 4px;
+}
+
+.datepicker {
+    vertical-align: bottom;
+}
+
+.datepicker_sep {
+    font-size: 85%;
+    color: #808080;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.2em;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.datepicker_textbox {
+    text-align: center;
+    border-width: 1px;
+    font-size: 90%;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.datepicker_button, .datepicker_button_l, .datepicker_button_r,
+.datepicker_button_l_OLD, .datepicker_button_r_OLD {
+    border-style: none;
+    box-shadow: none;
+    width: 15px;
+    height: 15px;
+    vertical-align: bottom;
+}
+
+/*.datepicker_button_l, datepicker_button_l_hover, .datepicker_button_r, datepicker_button_r_hover,*/
+.datepicker_button_l, .datepicker_button_r,
+.datepicker_button_l_OLD, .datepicker_button_r_OLD {
+    background-image: url('/images/datepickerv3-sprites.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    padding-bottom: 1px;
+}
+
+.datepicker_button_l, .datepicker_button_l_OLD {
+    background-position: 0 -16px;
+}
+
+    .datepicker_button_l:hover, .datepicker_button_l_OLD:hover {
+        background-position: 0 0;
+    }
+
+.datepicker_button_r, .datepicker_button_r_OLD {
+    background-position: -15px -16px;
+}
+
+    .datepicker_button_r:hover, .datepicker_button_r_OLD:hover {
+        background-position: -15px 0;
+    }
+
+/* NEW - MOVE TO ABOVE AFTER TESTING */
+.datepicker_button_l {
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+}
+
+.datepicker_button_r {
+    position: absolute;
+    bottom: 0;
+    right: 2px;
+}
+/* ----------------*/
+
+.table_hint {
+    font-size: 85%;
+    color: #808080;
+    line-height: 110%;
+    vertical-align: top;
+}
+
+    .table_hint p {
+        padding: 0;
+        margin: 0 0 .5em 0;
+    }
+
+.table_rowborder_top {
+    border-top: 1px solid #DDDDDD;
+}
+
+.table_rowborder_top_heavy {
+    border-top: 2px solid #DDDDDD;
+}
+
+.table_row_alt, table_row_alt td {
+    background-color: #E6F5FF;
+}
+
+/* Used when a Panel's "GroupingText" is set (rendered as <fieldset><legend>...) */
+
+fieldset {
+    border: 1px solid #DDDDDD;
+}
+
+    fieldset legend {
+        color: #006600;
+    }
+
+/************************************************************/
+/* GridViews are used to display paging lists of database tables. 
+   Usually, the user can select a row for editing and such. The 
+   styles below define the appearance of the header row, the 
+   body, and the pager row.
+*/
+
+/* Copy from ui-widget-content ! */
+
+.gridview_title {
+    font-size: 1.2em;
+}
+
+.gridview_content, .gridview_background {
+    color: #333333;
+    background-image: url('/images/background_box.gif');
+    background-repeat: repeat-x;
+    background-color: #FBFFFF;
+}
+
+.gridview_content {
+    margin-right: auto;
+    margin-left: auto; /*background: #eeeeee url('themeroller/images/ui-bg_highlight-soft_100_eeeeee_1x100.png') repeat-x 50% top;*/ /*background: #FAFBFF;*/
+    padding: 2px;
+}
+
+.gridview_content, .gridview_border {
+    border: 1px solid #DDDDDD;
+}
+
+.gridview_row_alt, .gridview_row_alt td {
+    padding-right: 4px;
+    padding-left: 4px;
+    vertical-align: baseline; /* See if this screws up some gridviews. If not, leave it in place. */
+    border-width: 1px;
+    border-style: none;
+    background-color: #E6F5FF;
+}
+
+.gridview_cell, .gridview_cell td {
+    padding-right: 4px;
+    padding-left: 4px;
+    vertical-align: baseline; /* See if this screws up some gridviews. If not, leave it in place. */
+    border: 1px none #DDDDDD;
+}
+
+.gridview_row_footer, .gridview_row_footer td {
+    border-style: solid none none none;
+    border-width: 1px;
+    border-color: #DDDDDD;
+    padding-right: 4px;
+    padding-left: 4px;
+    vertical-align: baseline; /* See if this screws up some gridviews. If not, leave it in place. */
+}
+
+/* Copy of ui-widget-header */
+.gridview_header, .gridview_header th, .gridview_header th a {
+    border: 1px solid #e78f08;
+    background: #f6a828 url('images/ui-bg_gloss-wave_35_f6a828_500x100.png') repeat-x 50% 50%;
+    color: #ffffff;
+    font-size: 97%;
+    font-weight: normal;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+.gridview_pager, .gridview_pager td {
+    padding-right: 4px;
+    padding-left: 4px; /* vertical-align: baseline; /* See if this screws up some gridviews. If not, leave it in place. */
+    border: 1px none #DDDDDD;
+}
+
+    .gridview_pager table {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    /* The page numbers inside the pager row */
+
+    .gridview_pager td td {
+        border: 1px none #FFFFFF;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+/************************************************************/
+/* These are styles used by the datepicker.                 */
+
+/* Mask to cover datepickers during postback with the asp:UpdateProgress control */
+
+.datepicker-disable {
+    opacity: .50;
+    filter: Alpha(Opacity=50);
+    background-color: #FFFFFF;
+}
+
+/************************************************************/
+/* Styles for ReportViewer controls							*/
+/* Idea: add a style for landscapre reports?                */
+
+.reportviewer_surround, .reportviewer_surround_minheight {
+    /*width: 7.25in;*/ /* Same as .rdlc file plus 0.25 to avoid scrollbar */
+    /*min-width: 7.25in;*/ /* Needed for IE 8 or older, or max-width:100% causes skinny column */
+    min-width: 680px;
+    /*max-width: 100%;*/
+    max-width: 720px;
+    overflow: auto;
+}
+
+.reportviewer_surround_wide {
+    /*width: 9.75in;*/ /* Same as .rdlc file plus 0.25 to avoid scrollbar */
+    /*min-width: 9.75in;*/ /* Needed for IE 8 or older, or max-width:100% causes skinny column */
+    min-width: 680px;
+    /*max-width: 100%;*/
+    /*max-width: 1000px;*/
+    overflow: auto;
+    /* 2017-07-03 SG: Center the report */
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    /* For Chrome */
+    margin-bottom: 1px;
+}
+
+.reportviewer_surround_wide {
+    max-width: 1000px;
+}
+
+/* 2017-07-03 SG */
+/* Exports are usually formatted *very* wide, so we have to constrain them a bit */
+.reportviewer_surround_wide_export {
+    max-width: 950px;
+}
+
+.reportviewer_surround_minheight {
+    min-height: 700px;
+}
+
+/***
+.reportviewer_surround_portrait {
+    width: 7in; 
+    overflow: auto;
+}
+***/
+
+/************************************************************/
+/* Styles for VSRepeaterEditor							    */
+/*															*/
+/* Notice that ui-widget is automatically applied to button	*/
+/* elements, so we have to have classes defined twice. This	*/
+/* solves a problem when used in popup dialogs.				*/
+
+.vsrepeatereditor_dow_button_on, .ui-widget .vsrepeatereditor_dow_button_on, .vsrepeatereditor_dow_button_off, .ui-widget .vsrepeatereditor_dow_button_off {
+    padding: 0;
+    margin: 0; /*width: 1.3em; 	height: 1.6em;*/
+    width: 17px;
+    height: 20px;
+    text-align: center; /*font-size: .8em;*/
+    font-size: 12px;
+    border: 1px solid #DDDDDD;
+    color: #1c94c4;
+}
+
+.vsrepeatereditor_dow_button_on {
+    background: #f6a828 url('images/ui-bg_gloss-wave_35_f6a828_500x100.png') repeat-x 50% 50% !important;
+    background-color: #99FFCC;
+}
+
+.vsrepeatereditor_dow_button_off {
+    background-color: #F0F0F0;
+    color: #A0A0A0;
+}
+
+.vsrepeatereditor_frequencystring {
+    color: #006600;
+    font-style: italic;
+}
+
+/************************************************************/
+/* Styles for the Privacy Policy							*/
+
+.privacypolicy_subhead {
+    font-size: 1.15em;
+    font-weight: 600;
+    color: #000000;
+}
+
+
+/****************************************************************/
+/* The following are styles to override the defaults defined	*/
+/* for ASP.NET AJAX tools.										*/
+/****************************************************************/
+
+/* Styles to override the ASP.NET Ajax ValidatorCallout */
+
+.ajax__validatorcallout_error_message_cell {
+    vertical-align: top;
+}
+
+/* Styles to override the ASP.NET Ajax ColorPicker */
+
+.ajax__colorPicker_container table {
+    border-collapse: separate; /*border: 1px solid #FFFFFF; 	border-spacing: 1px;*/
+}
+
+/*
+	Temporary fix for AJAX PasswordStrength extender 
+	within a ModalPopup extender. The fix is to force
+	a Z-index higher than the ModalPopup (which is
+	10,000).
+*/
+
+.passwordstrength, .passwordstrength_veryweak, .passwordstrength_weak, .passwordstrength_mild, .passwordstrength_medium, .passwordstrength_strong, .passwordstrength_verystrong {
+    padding: 4px;
+    border: 1px solid #DDDDDD;
+    z-index: 10001;
+    background-color: #F8F8F8;
+}
+
+.passwordstrength_veryweak {
+    color: #FF0000;
+}
+
+.passwordstrength_weak {
+    color: #FF66CC;
+}
+
+.passwordstrength_mild {
+    color: #FFBF00;
+}
+
+.passwordstrength_medium {
+    color: #999966;
+}
+
+.passwordstrength_strong {
+    color: #00CC00;
+}
+
+.passwordstrength_verystrong {
+    color: #009933;
+}

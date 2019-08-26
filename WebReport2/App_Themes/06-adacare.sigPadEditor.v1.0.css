@@ -1,0 +1,80 @@
+﻿/* 06-adacare.sigPadEditor.v1.0 */
+
+.sigPadEditorCanvasWrapper {
+    position: relative;
+    display: block;
+    height: 125px;
+}
+
+.sigPadEditorCanvasWrapperDisabled {
+    background: #A0A0A0 url('/App_Themes/images/ui-bg_diagonals-thick_20_666666_40x40.png') 50% 50%;
+    opacity: 0.5;
+}
+
+.sigPadEditorCanvas {
+    width: 100%;
+    /*height: 150px;*/
+    height: 100%;
+    display: block;
+}
+
+.sigPadEditorSigLine {
+    position: absolute;
+    width: 95%;
+    margin-left: 5px;
+    bottom: 10px;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #808080;
+    /* make this unselectable. Does not work in IE. */
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+/*.sigPagEditorBelowCanvas {
+    position: relative;
+}*/
+
+.sigPadEditorClearButt {
+    position: absolute;
+    right: 0;
+}
+
+.sigPadEditorIsBlankIcon, .sigPadEditorIsSignedIcon {
+    display: inline-block;
+    width: 1.0em;
+    padding-right: 3px;
+}
+
+.sigPadEditorIsBlankIcon {
+    -webkit-text-fill-color: #A0A0A0;
+    color: #A0A0A0;
+}
+
+.sigPadEditorIsSignedIcon {
+    -webkit-text-fill-color: #00AA00;
+    color: #00AA00;
+}
+
+/* Tweaks to visually distinguish client from staff signature pads */
+
+.SigPadEditorClientSurround {
+    background-color: #F0FFF0 !important
+}
+
+.SigPadEditorStaffSurround {
+    /* use default background for staff */
+    /*background-color: #FFFFFF */
+}
+
+.sigPadEditorClientCanvas {
+    border: 1px solid #00FF00;
+}
+
+.sigPadEditorStaffCanvas {
+    border: 1px solid #808080;
+}

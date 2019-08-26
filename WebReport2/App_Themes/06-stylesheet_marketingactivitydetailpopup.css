@@ -1,0 +1,64 @@
+﻿/*
+	These are the styles used by the marketing activity detail popup page. They are rather specialized,
+    and they aren't used elsewhere in the application.
+*/
+
+.marketingactivitypopup_surround {
+    position: relative;
+    min-width: 200px;
+    background-color: transparent;
+    z-index: 1; /* Places the popup above the parent GridView */
+}
+
+.marketingactivitypopup {
+    padding: 2px;
+    font-size: .8em;
+    background-color: #FFFFFF;
+    border: 1px solid #D0D0D0;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px; /* CSS3 */
+    -moz-box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3); /* CSS3 */
+    border-collapse: separate; /* Must override collapse inherited from <table>, or IE loses shadow */
+}
+
+.marketingactivitypopup table td{
+    background-color: #FFFFFF;
+    }
+
+/***
+.marketingactivitypopup_leftcol, .marketingactivitypopup_leftcol td {
+    background-color: transparent !important;
+}
+
+.marketingactivitypopup_rightcol, .marketingactivitypopup_rightcol td {
+    background-color: #FFFFFF !important;
+}
+***/
+
+.marketingactivitypopup_titlediv,.marketingactivitypopup_titlediv td {
+    min-height: 17px;
+    padding: 2px;
+    font-size: 1.1em;
+    font-weight: 600;
+    background-color: #F0F0F0 !important;
+}
+
+.marketingactivitypopup_closebox {
+    border: 1px solid #D0D0D0; float: right;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    text-align: right;
+}
+
+.marketingactivitypopup_left_arrow {
+    position: absolute;
+    top: 0px;
+    left: -11px;
+    background-image: url('/images/detail_popup_left_arrow.png');
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 24px;
+}

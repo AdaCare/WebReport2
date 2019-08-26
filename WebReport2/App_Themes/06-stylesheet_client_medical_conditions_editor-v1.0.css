@@ -1,0 +1,44 @@
+﻿
+/* Styles for the ClientMedicalConditionEditor. These are used on the Nursing pages. */
+
+.client_medical_condition_editor_surround {
+    position: relative;
+    height: 100%;
+}
+
+.client_medical_condition_editor_header {
+    height: 15px;
+    position: absolute;
+    top: 0;
+}
+
+.client_medical_condition_editor_body {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 35px;
+    overflow-y: scroll;
+}
+
+    .client_medical_condition_editor_body input {
+        margin: 0;
+    }
+
+.client_medical_condition_editor_footer {
+    height: 30px;
+    position: absolute;
+    bottom: 5px;
+}
+
+.client_medical_condition_editor_selection_col {
+    width: 4em;
+    text-align: center;
+}
+
+.client_medical_condition_editor_descrip_col {
+    text-align: left;
+}
+
+.client_medical_condition_editor_total {
+    margin-top: 2px;
+}

@@ -1,0 +1,36 @@
+﻿/* These styles are used by map pages */
+
+.map_trek_head {
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+.map_quality_warning {
+    background-color: #FFFFA0;
+    font-weight: normal;
+}
+
+.map_maneuver_distance, .map_maneuver_rownum {
+    padding-left: 1em;
+    text-align: right;
+    vertical-align: top;
+    padding-right: 1em;
+}
+
+.map_route_type_box {
+    /* padding: 8px 10px 8px 10px;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    background-color: #666666;
+    filter: alpha(opacity=80);
+    opacity: 0.80; */
+    font-size: 12px !important;
+}
+
+.map_route_type_item {
+    /* filter: alpha(opacity=100);
+    opacity: 1.00;
+    color: #FFFFFF; */
+}

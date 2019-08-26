@@ -1,0 +1,54 @@
+﻿/* Styles for Activity Log pop-up */
+/* 06-adacare.clockInOutActivityLogPopup-v3.1.css */
+
+.activityDetailsHeader th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #A0A0A0;
+}
+
+.activityDetailsIndex {
+    text-align: right;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.activityDetailsDateTime {
+    text-align: center;
+    white-space: nowrap;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.activityDetailsState {
+    text-align: center;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.activityDetailsAction {
+    text-align: left;
+    white-space: nowrap;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.activityDetailsResponse {
+    text-align: left;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.activityDetailsMessage {
+    text-align: left;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.activityDetailsSignaturePad {
+    border: 1px solid #A0A0A0;
+    background-color: white;
+    max-width: 200px;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+}

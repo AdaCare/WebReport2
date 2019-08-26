@@ -1,0 +1,21 @@
+﻿
+/************************************************************/
+/* Styles for the Wizard control         */
+
+.wizard_body {
+    padding: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wizard_header {
+    text-align: center;
+}
+
+.wizard_sidebar {
+    padding: 10px;
+    margin: 5px;
+    font-weight: normal;
+    vertical-align: top;
+    width: 10em;
+}

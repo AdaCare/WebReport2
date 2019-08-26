@@ -1,0 +1,71 @@
+﻿/* These are styles used by messaging tools */
+
+/* Styles for messages within the message pane */
+
+.messagingViewerMessageSentFromMe {
+}
+
+.messagingViewerMessageSentToMe {
+}
+
+.messagingViewerMessageSentFromMeBody, .messagingViewerMessageSentToMeBody {
+    width: 75%;
+    border-radius: 8px;
+    margin: 3px;
+    padding: 5px;
+    word-break: break-all;
+}
+
+.messagingViewerMessageSentFromMeBody {
+    color: #FFFFFF;
+    background-color: #0088FF;
+    margin-left: auto;
+}
+
+.messagingViewerMessageSentToMeBody {
+    color: #000000;
+    background-color: #E8E8E8;
+    margin-right: auto;
+}
+
+.messagingViewerMessageSentFromMeDateTime, .messagingViewerMessageSentToMeDateTime {
+    color: gray;
+    font-size: 75%;
+}
+
+.messagingViewerMessageSentFromMeDateTime {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.messagingViewerMessageSentToMeDateTime {
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* Styles for the "text to send" elements */
+
+.messagingViewerMessageSendTextBoxSurround, .messagingPopupMessageSendTextBoxSurround {
+    /* This height + messagingViewerMessagePane height = height of surround (plus padding and such). Be careful! */
+    height: 7.0em;
+    background-color: #F8F8F8;
+    margin-top: 2px;
+    padding: 5px 5px 0 5px;
+}
+
+.messagingViewerMessageSendTextBoxSurround {
+    border-top: 1px solid #C0C0C0;
+}
+
+.messagingPopupMessageSendTextBoxSurround {
+    border: 1px solid #C0C0C0;
+}
+
+.messagingViewerMessageSendTextBox {
+    width: 98%;
+    border: 1px solid #C0C0C0;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
