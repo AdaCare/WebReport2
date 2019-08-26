@@ -23,7 +23,9 @@ namespace WebReport2
                 //                ReportViewer1.Visible = false;
                 //                ReportViewer2.Visible = false;
                 //                ReportViewer3.Visible = false;
-
+                Hide1.Checked = true;
+                Hide2.Checked = true;
+                Hide3.Checked = true;
 
                 string instanceId = Environment.GetEnvironmentVariable("WEBSITE_INSTANCE_ID");
                 /// string siteName = Environment.GetEnvironmentVariable("WEBSITE_SITE_NAME");
