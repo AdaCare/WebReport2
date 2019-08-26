@@ -75,6 +75,7 @@ namespace WebReport2
             ReportDataSource rds = new ReportDataSource("DataSet1", dt);
             ReportViewer1.LocalReport.DataSources.Add(rds);
             ReportViewer1.LocalReport.ReportPath = "Reports/Report1.rdlc";
+            ReportViewer1.LocalReport.DisplayName = "Report1";
             ReportViewer1.LocalReport.Refresh();
             ReportViewer1.ShowFindControls = false;
             ReportViewer1.ShowPrintButton = false;
@@ -82,12 +83,13 @@ namespace WebReport2
             ReportViewer1.ShowZoomControl = false;
             ReportViewer1.ShowRefreshButton = false;
             ReportViewer1.ShowBackButton = false;
-            ReportViewer1.Visible = true;
+            ReportViewer1.Visible = Hide1.Checked;
 
             ReportViewer2.Reset();
             ReportDataSource rds2 = new ReportDataSource("DataSet1", dt);
             ReportViewer2.LocalReport.DataSources.Add(rds2);
             ReportViewer2.LocalReport.ReportPath = "Reports/Report2.rdlc";
+            ReportViewer2.LocalReport.DisplayName = "Report2";
             ReportViewer2.LocalReport.Refresh();
             ReportViewer2.ShowFindControls = false;
             ReportViewer2.ShowPrintButton = false;
@@ -95,12 +97,14 @@ namespace WebReport2
             ReportViewer2.ShowZoomControl = false;
             ReportViewer2.ShowRefreshButton = false;
             ReportViewer2.ShowBackButton = false;
+            ReportViewer1.Visible = Hide2.Checked;
             ReportViewer2.Visible = true;
 
             ReportViewer3.Reset();
             ReportDataSource rds3 = new ReportDataSource("DataSet1", dt);
             ReportViewer3.LocalReport.DataSources.Add(rds2);
-            ReportViewer3.LocalReport.ReportPath = "Reports/Report2.rdlc";
+            ReportViewer3.LocalReport.ReportPath = "Reports/Report3.rdlc";
+            ReportViewer3.LocalReport.DisplayName = "Report3";
             ReportViewer3.LocalReport.Refresh();
             ReportViewer3.ShowFindControls = false;
             ReportViewer3.ShowPrintButton = false;
@@ -108,7 +112,7 @@ namespace WebReport2
             ReportViewer3.ShowZoomControl = false;
             ReportViewer3.ShowRefreshButton = false;
             ReportViewer3.ShowBackButton = false;
-            ReportViewer3.Visible = true;
+            ReportViewer1.Visible = Hide3.Checked;
         }
 
         protected DataTable GetData()

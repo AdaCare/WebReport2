@@ -30,25 +30,31 @@
 
             </tr>
             <tr>
+                <td>Report1</td>
                 <td>
-                    <rsweb:ReportViewer ID="ReportViewer1" runat="server" ProcessingMode="Local" Width="84%" BorderStyle="Solid" BorderWidth="1px" Height="272px"  AsyncRendering="false">
-                        <LocalReport ReportPath="Reports\Report1.rdlc" EnableExternalImages="True"/>
+                    <rsweb:ReportViewer ID="ReportViewer1" runat="server" ProcessingMode="Local" Width="84%" BorderStyle="Solid" BorderWidth="1px" Height="272px"
+                        AsyncRendering="false" ShowBackButton="False" ShowFindControls="False" ShowPrintButton="False" ShowRefreshButton="False" ShowZoomControl="False">
+                        <LocalReport ReportPath="Reports\Report1.rdlc" EnableExternalImages="True" DisplayName="Report1"/>
                     </rsweb:ReportViewer>
 
                 </td>
             </tr>
             <tr>
+                <td>Report2</td>
                 <td>
-                    <rsweb:ReportViewer ID="ReportViewer2" runat="server" ProcessingMode="Local" Width="84%" BorderStyle="Solid" BorderWidth="1px" Height="272px"  AsyncRendering="false">
-                        <LocalReport ReportPath="Reports\Report2.rdlc" EnableExternalImages="True"/>
+                    <rsweb:ReportViewer ID="ReportViewer2" runat="server" ProcessingMode="Local" Width="84%" BorderStyle="Solid" BorderWidth="1px" Height="272px"
+                        AsyncRendering="false" ShowBackButton="False" ShowFindControls="False" ShowPrintButton="False" ShowRefreshButton="False" ShowZoomControl="False">
+                        <LocalReport ReportPath="Reports\Report2.rdlc" EnableExternalImages="True" DisplayName="Report2"/>
                     </rsweb:ReportViewer>
 
                 </td>
             </tr>
             <tr>
+                <td>Report3</td>
                 <td>
-                    <rsweb:ReportViewer ID="ReportViewer3" runat="server" ProcessingMode="Local" Width="84%" BorderStyle="Solid" BorderWidth="1px" Height="272px"  AsyncRendering="false">
-                        <LocalReport ReportPath="Reports\Report3.rdlc" EnableExternalImages="True"/>
+                    <rsweb:ReportViewer ID="ReportViewer3" runat="server" ProcessingMode="Local" Width="84%" BorderStyle="Solid" BorderWidth="1px" Height="272px"
+                        AsyncRendering="false" ShowBackButton="False" ShowFindControls="False" ShowPrintButton="False" ShowRefreshButton="False" ShowZoomControl="False">
+                        <LocalReport ReportPath="Reports\Report3.rdlc" EnableExternalImages="True" DisplayName="Report3"/>
                     </rsweb:ReportViewer>
 
                 </td>
