@@ -20,8 +20,9 @@ namespace WebReport2
             if (!IsPostBack)
             {
                 // need anything here?
-//                ReportViewer1.Visible = false;
-//                ReportViewer1.Visible = false;
+                //                ReportViewer1.Visible = false;
+                //                ReportViewer2.Visible = false;
+                //                ReportViewer3.Visible = false;
 
 
                 string instanceId = Environment.GetEnvironmentVariable("WEBSITE_INSTANCE_ID");
@@ -51,6 +52,10 @@ namespace WebReport2
             pagenum = ReportViewer2.CurrentPage;
             ReportViewer2.LocalReport.Refresh();
             ReportViewer2.CurrentPage = pagenum;
+
+            pagenum = ReportViewer3.CurrentPage;
+            ReportViewer3.LocalReport.Refresh();
+            ReportViewer3.CurrentPage = pagenum;
             // }
         }
 
@@ -61,10 +66,10 @@ namespace WebReport2
 
         protected void ShowReport()
         {
-            ReportViewer1.Reset();
 
             DataTable dt = GetData();
 
+            ReportViewer1.Reset();
             ReportDataSource rds = new ReportDataSource("DataSet1", dt);
             ReportViewer1.LocalReport.DataSources.Add(rds);
             ReportViewer1.LocalReport.ReportPath = "Reports/Report1.rdlc";
@@ -89,6 +94,19 @@ namespace WebReport2
             ReportViewer2.ShowRefreshButton = false;
             ReportViewer2.ShowBackButton = false;
             ReportViewer2.Visible = true;
+
+            ReportViewer3.Reset();
+            ReportDataSource rds3 = new ReportDataSource("DataSet1", dt);
+            ReportViewer3.LocalReport.DataSources.Add(rds2);
+            ReportViewer3.LocalReport.ReportPath = "Reports/Report2.rdlc";
+            ReportViewer3.LocalReport.Refresh();
+            ReportViewer3.ShowFindControls = false;
+            ReportViewer3.ShowPrintButton = false;
+            ReportViewer3.ShowFindControls = false;
+            ReportViewer3.ShowZoomControl = false;
+            ReportViewer3.ShowRefreshButton = false;
+            ReportViewer3.ShowBackButton = false;
+            ReportViewer3.Visible = true;
         }
 
         protected DataTable GetData()
@@ -104,6 +122,23 @@ namespace WebReport2
             }
 
             return dt;
+        }
+
+        protected void Hide1_CheckedChanged(object sender, EventArgs e)
+        {
+            ReportViewer1.Visible = Hide1.Checked;
+        }
+
+        protected void Hide2_CheckedChanged(object sender, EventArgs e)
+        {
+            ReportViewer2.Visible = Hide2.Checked;
+
+        }
+
+        protected void Hide3_CheckedChanged(object sender, EventArgs e)
+        {
+            ReportViewer3.Visible = Hide3.Checked;
+
         }
     }
 }

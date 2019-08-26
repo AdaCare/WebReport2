@@ -13,10 +13,12 @@
 <body>
     <form id="form1" runat="server">
         <asp:ScriptManager ID="ScriptManager1" runat="server">
-
         </asp:ScriptManager>
         <asp:Button ID="buttonShow" runat="server" OnClick="buttonShow_Click" Text="Refresh Report" />
         <br />
+        <asp:CheckBox ID="Hide1" runat="server" AutoPostBack="true" OnCheckedChanged="Hide1_CheckedChanged"></asp:CheckBox>
+        <asp:CheckBox ID="Hide2" runat="server" AutoPostBack="true" OnCheckedChanged="Hide2_CheckedChanged"></asp:CheckBox>
+        <asp:CheckBox ID="Hide3" runat="server" AutoPostBack="true" OnCheckedChanged="Hide3_CheckedChanged"></asp:CheckBox>
         <br />
         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         <br />
@@ -29,6 +31,12 @@
         <div>
                 <rsweb:ReportViewer ID="ReportViewer2" runat="server" ProcessingMode="Local" Width="84%" BorderStyle="Solid" BorderWidth="1px" Height="313px"  AsyncRendering="false">
                     <LocalReport ReportPath="Reports\Report2.rdlc" EnableExternalImages="True"/>
+                </rsweb:ReportViewer>
+
+        </div>
+        <div>
+                <rsweb:ReportViewer ID="ReportViewer3" runat="server" ProcessingMode="Local" Width="84%" BorderStyle="Solid" BorderWidth="1px" Height="313px"  AsyncRendering="false">
+                    <LocalReport ReportPath="Reports\Report3.rdlc" EnableExternalImages="True"/>
                 </rsweb:ReportViewer>
 
         </div>
