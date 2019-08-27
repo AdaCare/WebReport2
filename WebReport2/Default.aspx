@@ -25,6 +25,27 @@
             document.write(unescape("%3Cscript src='/js/jquery-2.2.4.min.js' type='text/javascript'%3E%3C/script%3E"));
         }
     </script>
+    <script type="text/javascript">
+        function displayTab1() {
+            document.getElementById("repdiv1").style.visibility = 'visible';
+            document.getElementById("repdiv2").style.visibility = 'hidden';
+            document.getElementById("repdiv3").style.visibility = 'hidden';
+        }
+    </script>
+    <script type="text/javascript">
+        function displayTab2() {
+            document.getElementById("repdiv1").style.visibility = 'hidden';
+            document.getElementById("repdiv2").style.visibility = 'visible';
+            document.getElementById("repdiv3").style.visibility = 'hidden';
+        }
+        </script>
+    <script type="text/javascript">
+        function displayTab3() {
+            document.getElementById("repdiv1").style.visibility = 'hidden';
+            document.getElementById("repdiv2").style.visibility = 'hidden';
+            document.getElementById("repdiv3").style.visibility = 'visible';
+        }
+    </script>
 
     <%-- jQuery 2.2.4. The Migrate plug-in is temporary --%>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.4.1.js"></script>
@@ -89,9 +110,9 @@
                 </tr>
             <tr>
                 <td>
-                    <asp:CheckBox ID="Hide1" runat="server" AutoPostBack="true" OnCheckedChanged="Hide1_CheckedChanged" Checked="true"></asp:CheckBox>
-                    <asp:CheckBox ID="Hide2" runat="server" AutoPostBack="true" OnCheckedChanged="Hide2_CheckedChanged" Checked="true"></asp:CheckBox>
-                    <asp:CheckBox ID="Hide3" runat="server" AutoPostBack="true" OnCheckedChanged="Hide3_CheckedChanged" Checked="true"></asp:CheckBox>
+                    <asp:CheckBox ID="Show1" runat="server" AutoPostBack="true" OnCheckedChanged="Show1_CheckedChanged" Checked="true" Visible="false"></asp:CheckBox>
+                    <asp:CheckBox ID="Show2" runat="server" AutoPostBack="true" OnCheckedChanged="Show2_CheckedChanged" Checked="true" Visible="false"></asp:CheckBox>
+                    <asp:CheckBox ID="Show3" runat="server" AutoPostBack="true" OnCheckedChanged="Show3_CheckedChanged" Checked="true" Visible="false"></asp:CheckBox>
                 </td>
             </tr>
 
@@ -99,68 +120,50 @@
                 <td class="reportviewer_surround_wide">
                     <asp:Panel ID="TabControl" runat="server">
                         <ul>
-                            <li><a href="#TabControl-1">Report1</a></li>
-                            <li><a href="#TabControl-2">Report2</a></li>
-                            <li><a href="#TabControl-3">Report3</a></li>
+                            <li><a href="#TabControl-1" onclick="displayTab1()">Report1</a></li>
+                            <li><a href="#TabControl-2" onclick="displayTab2()">Report2</a></li>
+                            <li><a href="#TabControl-3" onclick="displayTab3()">Report3</a></li>
                         </ul>
                         <div id="TabControl-1" class="ui-tabs-hide reportviewer_surround_wide">
                             <p>
-                                This is Report1 text.
+                                This is Report1 - Summary
                             </p>
-                            <table class="gridview_content">
-                                <tr>
-                                    <td>
-                                        <div class="reportviewer_surround_wide">
-                                            <rsweb:ReportViewer ID="ReportViewer1" runat="server" ProcessingMode="Local" Width="84%" BorderStyle="Solid" BorderWidth="1px" Height="272px"
-                                                AsyncRendering="false" ShowBackButton="False" ShowFindControls="False" ShowPrintButton="False" ShowRefreshButton="False" ShowZoomControl="False">
-                                                <LocalReport ReportPath="Reports\Report2.rdlc" EnableExternalImages="True" DisplayName="Report2"/>
-                                            </rsweb:ReportViewer>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
                             <br />
                         </div>
                         <div id="TabControl-2" class="ui-tabs-hide reportviewer_surround_wide">
                             <p>
-                                This is Report2 text.
+                                This is Report2 - Invoice
                             </p>
-                            <table class="gridview_content">
-                                <tr>
-                                    <td>
-                                        <div class="reportviewer_surround_wide">
-                                            <rsweb:ReportViewer ID="ReportViewer2" runat="server" ProcessingMode="Local" Width="84%" BorderStyle="Solid" BorderWidth="1px" Height="272px"
-                                                AsyncRendering="false" ShowBackButton="False" ShowFindControls="False" ShowPrintButton="False" ShowRefreshButton="False" ShowZoomControl="False">
-                                                <LocalReport ReportPath="Reports\Report2.rdlc" EnableExternalImages="True" DisplayName="Report2"/>
-                                            </rsweb:ReportViewer>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
                             <br />
                         </div>
                         <div id="TabControl-3" class="ui-tabs-hide reportviewer_surround_wide">
                             <p>
-                                This is Report3 text.
+                                This is Report3 - Export Worksheet to a file
                             </p>
-                            <table class="gridview_content">
-                                <tr>
-                                    <td>
-                                        <div class="reportviewer_surround_wide">
-                                            <rsweb:ReportViewer ID="ReportViewer3" runat="server" ProcessingMode="Local" Width="84%" BorderStyle="Solid" BorderWidth="1px" Height="272px"
-                                                AsyncRendering="false" ShowBackButton="False" ShowFindControls="False" ShowPrintButton="False" ShowRefreshButton="False" ShowZoomControl="False">
-                                                <LocalReport ReportPath="Reports\Report2.rdlc" EnableExternalImages="True" DisplayName="Report2"/>
-                                            </rsweb:ReportViewer>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
                             <br />
                         </div>
                     </asp:Panel>
                 </td>
             </tr>
         </table>
+        <div id="repdiv1" class="reportviewer_surround_wide" style='left: 100px; top: 300px; position: absolute; width: 400px; height: 600px; margin-bottom: -200px; visibility: visible'>
+            <rsweb:ReportViewer ID="ReportViewer1" runat="server" ProcessingMode="Local" Width="84%" BorderStyle="Solid" BorderWidth="1px" Height="500px"
+                AsyncRendering="false" ShowBackButton="False" ShowFindControls="False" ShowPrintButton="False" ShowRefreshButton="False" ShowZoomControl="False">
+                <LocalReport ReportPath="Reports\Report2.rdlc" EnableExternalImages="True" DisplayName="Report2"/>
+            </rsweb:ReportViewer>
+        </div>
+        <div id="repdiv2"class="reportviewer_surround_wide" style='left: 100px; top: 300px; position: absolute; width: 400px; height: 600px; margin-bottom: -200px; visibility: hidden'>
+            <rsweb:ReportViewer ID="ReportViewer2" runat="server" ProcessingMode="Local" Width="84%" BorderStyle="Solid" BorderWidth="1px" Height="500px"
+                AsyncRendering="false" ShowBackButton="False" ShowFindControls="False" ShowPrintButton="False" ShowRefreshButton="False" ShowZoomControl="False">
+                <LocalReport ReportPath="Reports\Report2.rdlc" EnableExternalImages="True" DisplayName="Report2"/>
+            </rsweb:ReportViewer>
+        </div>
+        <div id="repdiv3"class="reportviewer_surround_wide" style='left: 100px; top: 300px; position: absolute; width: 400px; height: 600px; margin-bottom: -200px; visibility: hidden'>
+            <rsweb:ReportViewer ID="ReportViewer3" runat="server" ProcessingMode="Local" Width="84%" BorderStyle="Solid" BorderWidth="1px" Height="500px"
+                AsyncRendering="false" ShowBackButton="False" ShowFindControls="False" ShowPrintButton="False" ShowRefreshButton="False" ShowZoomControl="False">
+                <LocalReport ReportPath="Reports\Report2.rdlc" EnableExternalImages="True" DisplayName="Report2"/>
+            </rsweb:ReportViewer>
+        </div>
     </form>
 </body>
 </html>

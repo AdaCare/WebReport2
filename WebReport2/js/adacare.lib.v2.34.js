@@ -585,11 +585,12 @@ adacare.lib._fixReportViewerToolbarBug2 = function ($tabPanel) {
 
         reportViewer = $find(reportID);
 
-        if (!reportViewer.get_isLoading()) {
-
+        if (!reportViewer.get_isLoading())
+        {
             reportViewer.recalculateLayout();
             $reportViewerElem.data(DATA_KEY, true);
         }
+
     }
 };
 

@@ -15,8 +15,8 @@ namespace WebReport2
             const string SCRIPT_KEY_TEMPLATE = "AdaCare.JavaScriptRegisterTabControlCode.{0}";
 
             // Sandy said to reverse these to see if fixes reportviewer 2019-08-25
-            const string TABCONTROL_TEMPLATE = "adacare.lib.tabControl('{0}');";
-            // const string TABCONTROL_TEMPLATE = "adacare.lib.tabControlReportViewerBugFix('{0}');";
+            // const string TABCONTROL_TEMPLATE = "adacare.lib.tabControl('{0}');";
+            const string TABCONTROL_TEMPLATE = "adacare.lib.tabControlReportViewerBugFix('{0}');";
 
             string scriptKey;
             string javaScriptCode;

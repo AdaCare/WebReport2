@@ -58,31 +58,31 @@ namespace WebReport2 {
         protected global::System.Web.UI.WebControls.Button buttonShow;
         
         /// <summary>
-        /// Hide1 control.
+        /// Show1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox Hide1;
+        protected global::System.Web.UI.WebControls.CheckBox Show1;
         
         /// <summary>
-        /// Hide2 control.
+        /// Show2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox Hide2;
+        protected global::System.Web.UI.WebControls.CheckBox Show2;
         
         /// <summary>
-        /// Hide3 control.
+        /// Show3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox Hide3;
+        protected global::System.Web.UI.WebControls.CheckBox Show3;
         
         /// <summary>
         /// TabControl control.

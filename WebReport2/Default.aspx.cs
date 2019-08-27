@@ -19,13 +19,14 @@ namespace WebReport2
         {
             if (!IsPostBack)
             {
-                // need anything here?
-                //                ReportViewer1.Visible = false;
-                //                ReportViewer2.Visible = false;
-                //                ReportViewer3.Visible = false;
-                Hide1.Checked = true;
-                Hide2.Checked = true;
-                Hide3.Checked = true;
+               // need anything here?
+                ReportViewer1.Visible = true;
+                ReportViewer2.Visible = false;
+                ReportViewer3.Visible = false;
+
+                Show1.Checked = true;
+                Show2.Checked = true;
+                Show3.Checked = true;
 
                 string instanceId = Environment.GetEnvironmentVariable("WEBSITE_INSTANCE_ID");
                 /// string siteName = Environment.GetEnvironmentVariable("WEBSITE_SITE_NAME");
@@ -42,11 +43,11 @@ namespace WebReport2
             int pagenum;
 
             base.OnLoadComplete(e);
-            //if (!IsPostBack)
-            //{
-            //    ShowReport();
-            //}
-            // return;
+            if (!IsPostBack)
+            {
+                ShowReport();
+            }
+            return;
 
             // Don't test IsPostBack. For some reason, the page loads *twice* each time it is displayed.
             // if (!IsPostBack)
@@ -94,7 +95,7 @@ namespace WebReport2
             ReportViewer1.ShowZoomControl = false;
             ReportViewer1.ShowRefreshButton = false;
             ReportViewer1.ShowBackButton = false;
-            ReportViewer1.Visible = Hide1.Checked;
+            ReportViewer1.Visible = Show1.Checked;
 
             ReportViewer2.Reset();
             ReportDataSource rds2 = new ReportDataSource("DataSet1", dt);
@@ -108,7 +109,7 @@ namespace WebReport2
             ReportViewer2.ShowZoomControl = false;
             ReportViewer2.ShowRefreshButton = false;
             ReportViewer2.ShowBackButton = false;
-            ReportViewer1.Visible = Hide2.Checked;
+            ReportViewer2.Visible = Show2.Checked;
             ReportViewer2.Visible = true;
 
             ReportViewer3.Reset();
@@ -123,7 +124,7 @@ namespace WebReport2
             ReportViewer3.ShowZoomControl = false;
             ReportViewer3.ShowRefreshButton = false;
             ReportViewer3.ShowBackButton = false;
-            ReportViewer1.Visible = Hide3.Checked;
+            ReportViewer3.Visible = Show3.Checked;
         }
 
         protected DataTable GetData()
@@ -141,20 +142,20 @@ namespace WebReport2
             return dt;
         }
 
-        protected void Hide1_CheckedChanged(object sender, EventArgs e)
+        protected void Show1_CheckedChanged(object sender, EventArgs e)
         {
-            ReportViewer1.Visible = Hide1.Checked;
+            ReportViewer1.Visible = Show1.Checked;
         }
 
-        protected void Hide2_CheckedChanged(object sender, EventArgs e)
+        protected void Show2_CheckedChanged(object sender, EventArgs e)
         {
-            ReportViewer2.Visible = Hide2.Checked;
+            ReportViewer2.Visible = Show2.Checked;
 
         }
 
-        protected void Hide3_CheckedChanged(object sender, EventArgs e)
+        protected void Show3_CheckedChanged(object sender, EventArgs e)
         {
-            ReportViewer3.Visible = Hide3.Checked;
+            ReportViewer3.Visible = Show3.Checked;
 
         }
     }
