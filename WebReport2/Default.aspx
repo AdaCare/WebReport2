@@ -96,23 +96,45 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div>
-            <asp:Label ID="InstanceIDLabel" runat="server" Text="InstanceID: "></asp:Label>
-            <asp:Label ID="InstanceID" runat="server" Text="unk"></asp:Label>
-        </div>
-        <div>
-        <asp:Button ID="buttonShow" runat="server" OnClick="buttonShow_Click" Text="Refresh Report" />
-        </div>
-
         <table class="gridview_content">
             <tr>
-                <td><p>Reports</p></td>
-                </tr>
+                <td></td>
+            </tr>
             <tr>
                 <td>
-                    <asp:CheckBox ID="Show1" runat="server" AutoPostBack="true" OnCheckedChanged="Show1_CheckedChanged" Checked="true" Visible="false"></asp:CheckBox>
-                    <asp:CheckBox ID="Show2" runat="server" AutoPostBack="true" OnCheckedChanged="Show2_CheckedChanged" Checked="true" Visible="false"></asp:CheckBox>
-                    <asp:CheckBox ID="Show3" runat="server" AutoPostBack="true" OnCheckedChanged="Show3_CheckedChanged" Checked="true" Visible="false"></asp:CheckBox>
+                    <asp:Label ID="InstanceIDLabel" runat="server" Text="InstanceID: "></asp:Label>
+                    <asp:Label ID="InstanceID" runat="server" Text="unk"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="button1" runat="server" OnClick="buttonShow_Click" Text="Refresh Reports" />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label>Async Mode: </label><asp:CheckBox ID="AsyncMode" runat="server" AutoPostBack="true" OnCheckedChanged="AsyncMode_CheckedChanged" Checked="false" Visible="true"></asp:CheckBox><label>  (will refresh reports)</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label>Show Reports: </label>
+                    <asp:CheckBox ID="Show1" runat="server" AutoPostBack="true" OnCheckedChanged="Show1_CheckedChanged" Checked="true" Visible="true"></asp:CheckBox>
+                    <asp:CheckBox ID="Show2" runat="server" AutoPostBack="true" OnCheckedChanged="Show2_CheckedChanged" Checked="true" Visible="true"></asp:CheckBox>
+                    <asp:CheckBox ID="Show3" runat="server" AutoPostBack="true" OnCheckedChanged="Show3_CheckedChanged" Checked="true" Visible="true"></asp:CheckBox>
+                    <label>  (changes ReportViewer.Visible - does NOT refresh reports)</label>
                 </td>
             </tr>
 
@@ -148,19 +170,19 @@
         </table>
         <div id="repdiv1" class="reportviewer_surround_wide" style='left: 100px; top: 300px; position: absolute; width: 400px; height: 600px; margin-bottom: -200px; visibility: visible'>
             <rsweb:ReportViewer ID="ReportViewer1" runat="server" ProcessingMode="Local" Width="84%" BorderStyle="Solid" BorderWidth="1px" Height="500px"
-                AsyncRendering="false" ShowBackButton="False" ShowFindControls="False" ShowPrintButton="False" ShowRefreshButton="False" ShowZoomControl="False">
+                AsyncRendering="true" ShowBackButton="False" ShowFindControls="False" ShowPrintButton="False" ShowRefreshButton="False" ShowZoomControl="False">
                 <LocalReport ReportPath="Reports\Report2.rdlc" EnableExternalImages="True" DisplayName="Report2"/>
             </rsweb:ReportViewer>
         </div>
         <div id="repdiv2"class="reportviewer_surround_wide" style='left: 100px; top: 300px; position: absolute; width: 400px; height: 600px; margin-bottom: -200px; visibility: hidden'>
             <rsweb:ReportViewer ID="ReportViewer2" runat="server" ProcessingMode="Local" Width="84%" BorderStyle="Solid" BorderWidth="1px" Height="500px"
-                AsyncRendering="false" ShowBackButton="False" ShowFindControls="False" ShowPrintButton="False" ShowRefreshButton="False" ShowZoomControl="False">
+                AsyncRendering="true" ShowBackButton="False" ShowFindControls="False" ShowPrintButton="False" ShowRefreshButton="False" ShowZoomControl="False">
                 <LocalReport ReportPath="Reports\Report2.rdlc" EnableExternalImages="True" DisplayName="Report2"/>
             </rsweb:ReportViewer>
         </div>
         <div id="repdiv3"class="reportviewer_surround_wide" style='left: 100px; top: 300px; position: absolute; width: 400px; height: 600px; margin-bottom: -200px; visibility: hidden'>
             <rsweb:ReportViewer ID="ReportViewer3" runat="server" ProcessingMode="Local" Width="84%" BorderStyle="Solid" BorderWidth="1px" Height="500px"
-                AsyncRendering="false" ShowBackButton="False" ShowFindControls="False" ShowPrintButton="False" ShowRefreshButton="False" ShowZoomControl="False">
+                AsyncRendering="true" ShowBackButton="False" ShowFindControls="False" ShowPrintButton="False" ShowRefreshButton="False" ShowZoomControl="False">
                 <LocalReport ReportPath="Reports\Report2.rdlc" EnableExternalImages="True" DisplayName="Report2"/>
             </rsweb:ReportViewer>
         </div>

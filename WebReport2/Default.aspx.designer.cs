@@ -49,13 +49,22 @@ namespace WebReport2 {
         protected global::System.Web.UI.WebControls.Label InstanceID;
         
         /// <summary>
-        /// buttonShow control.
+        /// button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button buttonShow;
+        protected global::System.Web.UI.WebControls.Button button1;
+        
+        /// <summary>
+        /// AsyncMode control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox AsyncMode;
         
         /// <summary>
         /// Show1 control.
